@@ -28,7 +28,7 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Software Developer</p>
+                <p class="software-dev">Software Developer</p>
                 <h1>Hi, I'm<br>Christopher Ratsabout</h1>
             </div>
         </div>
@@ -271,6 +271,7 @@
         const goTopBtn = document.querySelector(".go-top-btn")
         let toggleBtn = document.querySelector(".toggle-btn");
         let btnIcon = document.getElementById("btnIcon");
+        const softwareDevText = document.querySelector(".software-dev");
 
         toggleBtn.onclick = function () {
             document.body.classList.toggle("light-mode");
@@ -279,10 +280,12 @@
                 toggleBtn.classList = "fa-regular fa-moon toggle-btn"
                 sidemenu.style.right = "-200px";
                 goTopBtn.style.visibility = "visible"
+                softwareDevText.style.color = "black"
             } else {
                 toggleBtn.classList = "fa-regular fa-sun toggle-btn"
                 sidemenu.style.right = "-200px";
                 goTopBtn.style.visibility = "visible"
+                softwareDevText.style.color = "var(--main-color)"
             }
         }
 
