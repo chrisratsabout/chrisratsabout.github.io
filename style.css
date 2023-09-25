@@ -108,7 +108,11 @@ nav ul li a:hover::after {
 }
 
 .header-text p {
+    font-size: 30px;
+    font-weight: 600;
     color: var(--main-color);
+    -webkit-text-stroke-width: .3px;
+    -webkit-text-stroke-color: black;
 }
 
 .go-top-btn {
