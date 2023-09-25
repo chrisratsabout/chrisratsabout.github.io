@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Ratsabout | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/8efc22d7af.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Skills</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm<br>Christopher Ratsabout</h1>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="go-top-btn"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-me.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>As a person who has a passion for learning languages and an endless need to create, software/web
+                        development naturally interested me and I've been hooked since I started learning in
+                        May 2022 with Udemy courses and other resources online. With some fundamental knowledge under my
+                        belt, I lacked structure, direction, and accountability in my studies. Therefore, I decided to
+                        enroll in Tech Elevator's part-time Java Coding Bootcamp from April - December 2023. Now, I am
+                        excited and eager to contribute my skills and creativity on a team in a software developer role.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('hobbies')">Hobbies</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="hobbies">
+                        <ul>
+                            <li><span>Web Development</span><br>Improve my full-stack coding skills & explore new
+                                frameworks
+                            </li>
+                            <li><span>Music</span><br>Guitar, Bass, Drums, Audio Production (Cubase)</li>
+                            <li><span>Art</span><br>Graphic design in Affinity Photo</li>
+                            <li><span>Sports</span><br>Watch soccer, tennis, & basketball</li>
+                            <li><span>Other</span><br>Travel, study languages & history</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020 - present</span><br>Private Music Instructor</li>
+                            <li><span>2018 - present</span><br>CNC Programmer at Excellon Motors</li>
+                            <li><span>2015 - 2018</span><br>Spanish Teacher at Carroll High School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Tech Elevator</li>
+                            <li><span>2015</span><br>Indiana University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Backend</h2>
+                    <p>Java, JUnit, IntelliJ, Spring Boot, REST API, JSON, SQL, PostgreSQL/PGAdmin, MySQL</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>Frontend</h2>
+                    <p>HTML, CSS, JavaScript, React, Vue, Responsive Design</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-git"></i>
+                    <h2>Other</h2>
+                    <p>Git, GitHub, GitLab, Photoshop, Affinity Photo, Windows OS, Mac OS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Racha Tea Boba</h3>
+                        <p>This object-oriented project was created with Java, Spring Boot, and PostgreSQL serving as
+                            the backend. The user interface features were built with React. This app offers full CRUD
+                            functionality, allowing users to assemble and view their order, update quantities, and
+                            remove items as well before finalizing their purchase.</p>
+                        <a href="https://github.com/chrisratsabout/racha-order-react" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Trip Budget Manager</h3>
+                        <p>Users with upcoming vacation plans can input their desired amount of money to budget for
+                            categories such as flights, hotel, transportation, and food. As a result, the user receives
+                            a total trip budget based on the input fields. Through a Java/Spring Boot backend that
+                            interacts with a MySql database, users can save, revisit, edit, and delete their trip
+                            budgets in a web application built with React.</p>
+                        <a href="https://github.com/chrisratsabout/trip-budget-manager" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>BASSics</h3>
+                        <p>As a music instructor, this was a passion project that combines my love of coding and music.
+                            BASSics is an app for bass guitar students. It features an interactive fretboard that users
+                            can click and "play" the bass. For those who still struggle with note names and their
+                            location on the fretboard, there is a quiz game to test your knowledge. Additionally, if
+                            minor and major scales are still a challenge, you can pick a key and see a visualization of
+                            how to play it on the bass.</p>
+                        <a href="https://chrisratsabout.github.io/bassics/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/chrisratsabout" class="btn" target="_blank">See more</a>
+        </div>
+    </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> Please fill out the form to message me.</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/chrisratsabout" target="_blank"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/christopherratsabout/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/chrisratsabout" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&#169; Copyright Christopher Ratsabout <span class="year"></span>. All rights reserved.</p>
+        </div>
+    </div>
+
+
+    <script>
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
+
+    <script>
+        const sidemenu = document.getElementById("sidemenu");
+        const goTopBtn = document.querySelector(".go-top-btn")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+            goTopBtn.style.visibility = "hidden"
+
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+            goTopBtn.style.visibility = "visible"
+        }
+    </script>
+
+    <script>
+        const year = document.querySelector('.year');
+        const currentYear = new Date().getFullYear();
+
+
+        year.innerHTML = currentYear;
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzf8vu0unRNB9UFEnE-k0zrMXOLeosHgq-d4ugijMlxLcGn41pu3f9VfEhyz0321OcIUQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
