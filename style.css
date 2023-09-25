@@ -59,6 +59,17 @@ nav {
 .logo {
     margin-top: 20px;
     width: 80px;
+    animation: rotation 30s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
 }
 
 nav ul li {
