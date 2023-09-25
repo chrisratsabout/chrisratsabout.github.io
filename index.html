@@ -10,8 +10,8 @@
     <script src="https://kit.fontawesome.com/8efc22d7af.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div id="header">
+<body class="">
+    <div id="header" class="header">
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
@@ -21,7 +21,9 @@
                     <li><a href="#services" onclick="closemenu()">Skills</a></li>
                     <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
                     <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <li><i class="fa-regular fa-sun toggle-btn" id="btnIcon"></i></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
@@ -149,7 +151,8 @@
                             location on the fretboard, there is a quiz game to test your knowledge. Additionally, if
                             minor and major scales are still a challenge, you can pick a key and see a visualization of
                             how to play it on the bass.</p>
-                        <a href="https://chrisratsabout.github.io/bassics/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://chrisratsabout.github.io/bassics/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -191,6 +194,7 @@
     </div>
 
 
+
     <script>
         let tablinks = document.getElementsByClassName("tab-links");
         let tabcontents = document.getElementsByClassName("tab-contents");
@@ -212,6 +216,22 @@
     <script>
         const sidemenu = document.getElementById("sidemenu");
         const goTopBtn = document.querySelector(".go-top-btn")
+        let toggleBtn = document.querySelector(".toggle-btn");
+        let btnIcon = document.getElementById("btnIcon");
+
+        toggleBtn.onclick = function () {
+            document.body.classList.toggle("light-mode");
+
+            if (document.body.classList.contains("light-mode")) {
+                toggleBtn.classList = "fa-regular fa-moon toggle-btn"
+                sidemenu.style.right = "-200px";
+                goTopBtn.style.visibility = "visible"
+            } else {
+                toggleBtn.classList = "fa-regular fa-sun toggle-btn"
+                sidemenu.style.right = "-200px";
+                goTopBtn.style.visibility = "visible"
+            }
+        }
 
         function openmenu() {
             sidemenu.style.right = "0";
