@@ -272,20 +272,23 @@
         let toggleBtn = document.querySelector(".toggle-btn");
         let btnIcon = document.getElementById("btnIcon");
         const softwareDevText = document.querySelector(".software-dev");
+        const arrowUp = document.querySelector(".fa-arrow-up");
 
         toggleBtn.onclick = function () {
             document.body.classList.toggle("light-mode");
 
             if (document.body.classList.contains("light-mode")) {
-                toggleBtn.classList = "fa-regular fa-moon toggle-btn"
+                toggleBtn.classList = "fa-regular fa-moon toggle-btn";
                 sidemenu.style.right = "-200px";
-                goTopBtn.style.visibility = "visible"
-                softwareDevText.style.color = "black"
+                goTopBtn.style.visibility = "visible";
+                softwareDevText.style.color = "black";
+                arrowUp.style.color = "white";
             } else {
-                toggleBtn.classList = "fa-regular fa-sun toggle-btn"
+                toggleBtn.classList = "fa-regular fa-sun toggle-btn";
                 sidemenu.style.right = "-200px";
-                goTopBtn.style.visibility = "visible"
-                softwareDevText.style.color = "var(--main-color)"
+                goTopBtn.style.visibility = "visible";
+                softwareDevText.style.color = "var(--main-color)";
+                arrowUp.style.color = "black";
             }
         }
 
