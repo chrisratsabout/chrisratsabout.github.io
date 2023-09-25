@@ -40,10 +40,10 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
+                <div class="about-col-1 left-card">
                     <img src="images/about-me.jpeg">
                 </div>
-                <div class="about-col-2">
+                <div class="about-col-2 right-card">
                     <h1 class="sub-title">About</h1>
                     <p>As a person who has a passion for learning languages and an endless need to create, software/web
                         development naturally interested me and I've been hooked since I started learning in
@@ -89,8 +89,8 @@
     <!--  Services -->
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">Skills</h1>
-            <div class="services-list">
+            <h1 class="sub-title card">Skills</h1>
+            <div class="services-list card">
                 <div>
                     <i class="fa-brands fa-java"></i>
                     <h2>Backend</h2>
@@ -113,8 +113,8 @@
     <!-- Portfolio -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">Portfolio</h1>
-            <div class="work-list">
+            <h1 class="sub-title card">Portfolio</h1>
+            <div class="work-list card">
                 <div class="work">
                     <img src="images/work-1.png">
                     <div class="layer">
@@ -165,7 +165,7 @@
     <div id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact-left">
+                <div class="contact-left left-card">
                     <h1 class="sub-title">Contact</h1>
                     <p><i class="fa-regular fa-paper-plane"></i> Please fill out the form to message me.</p>
                     <div class="social-icons">
@@ -177,7 +177,7 @@
                                 class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
-                <div class="contact-right">
+                <div class="contact-right right-card">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="text" name="Email" placeholder="Your Email" required>
@@ -192,6 +192,59 @@
             <p>&#169; Copyright Christopher Ratsabout <span class="year"></span>. All rights reserved.</p>
         </div>
     </div>
+
+    <script>
+        //card observer code
+        const cards = document.querySelectorAll(".card");
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle("show", entry.isIntersecting)
+                if (entry.isIntersecting) observer.unobserve(entry.target)
+            })
+        },
+            {
+                threshold: .5,
+            })
+
+        cards.forEach(card => {
+            observer.observe(card)
+        })
+
+        //left card observer code
+        const leftCards = document.querySelectorAll(".left-card");
+
+        const leftObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle("show", entry.isIntersecting)
+                if (entry.isIntersecting) observer.unobserve(entry.target)
+            })
+        },
+            {
+                threshold: .5,
+            })
+
+        leftCards.forEach(leftCard => {
+            observer.observe(leftCard)
+        })
+
+        //right card observer code
+        const rightCards = document.querySelectorAll(".right-card");
+
+        const rightObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                entry.target.classList.toggle("show", entry.isIntersecting)
+                if (entry.isIntersecting) observer.unobserve(entry.target)
+            })
+        },
+            {
+                threshold: .5,
+            })
+
+        rightCards.forEach(rightCard => {
+            observer.observe(rightCard)
+        })
+    </script>
 
 
 
