@@ -328,6 +328,8 @@ nav ul li a:hover::after {
     transition: height 0.5s;
 }
 
+
+
 .layer h2 {
     margin-bottom: 20px;
 }
