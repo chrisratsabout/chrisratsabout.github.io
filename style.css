@@ -110,6 +110,10 @@ nav ul li a:hover::after {
     cursor: pointer;
 }
 
+.fa-bars:hover {
+    cursor: pointer;
+}
+
 
 .header-text {
     margin-top: 20%;
@@ -337,6 +341,7 @@ nav ul li a:hover::after {
 
 
 .layer p {
+    font-size: 18px;
     line-height: 1.5;
 }
 
