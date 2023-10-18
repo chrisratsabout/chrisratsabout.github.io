@@ -16,6 +16,40 @@ cards.forEach(card => {
     observer.observe(card)
 })
 
+//MIDDLE CARD CLASS INTERSECTION OBSERVER 
+const middleCards = document.querySelectorAll(".middle-card");
+
+const middleObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+        if (entry.isIntersecting) observer.unobserve(entry.target)
+    })
+},
+    {
+        threshold: .5,
+    })
+
+middleCards.forEach(card => {
+    observer.observe(card)
+})
+
+//RIGHT VERTICAL CARD CLASS INTERSECTION OBSERVER 
+const rightVerticalCards = document.querySelectorAll(".right-vertical-card");
+
+const rightVerticalObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting)
+        if (entry.isIntersecting) observer.unobserve(entry.target)
+    })
+},
+    {
+        threshold: .5,
+    })
+
+rightVerticalCards.forEach(card => {
+    observer.observe(card)
+})
+
 //LEFT CARD CLASS INTERSECTION OBSERVER 
 const leftCards = document.querySelectorAll(".left-card");
 

@@ -459,6 +459,28 @@ form .btn2 {
     opacity: 1;
 }
 
+.middle-card {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 300ms;
+}
+
+.middle-card.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.right-vertical-card {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 450ms;
+}
+
+.right-vertical-card.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 .left-card {
     transform: translateX(-100px);
     opacity: 0;
