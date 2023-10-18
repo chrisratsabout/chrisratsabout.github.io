@@ -139,22 +139,22 @@ function closemenu() {
 }
 
 //CONTACT SUBMISSION FORM HANDLING
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzf8vu0unRNB9UFEnE-k0zrMXOLeosHgq-d4ugijMlxLcGn41pu3f9VfEhyz0321OcIUQ/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg");
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbzf8vu0unRNB9UFEnE-k0zrMXOLeosHgq-d4ugijMlxLcGn41pu3f9VfEhyz0321OcIUQ/exec'
+// const form = document.forms['submit-to-google-sheet']
+// const msg = document.getElementById("msg");
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(function () {
-                msg.innerHTML = "";
-            }, 5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-})
+// form.addEventListener('submit', e => {
+//     e.preventDefault()
+//     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+//         .then(response => {
+//             msg.innerHTML = "Message sent successfully";
+//             setTimeout(function () {
+//                 msg.innerHTML = "";
+//             }, 5000)
+//             form.reset()
+//         })
+//         .catch(error => console.error('Error!', error.message))
+// })
 
 //FOOTER COPYRIGHT TEXT
 const year = document.querySelector('.year');
