@@ -114,6 +114,20 @@ nav ul li a:hover::after {
     cursor: pointer;
 }
 
+.theme-btn {
+    border: 1px solid #fff;
+    padding: 8px;
+    border-radius: 30px;
+}
+
+.theme-btn:hover {
+    cursor: pointer;
+        > i {
+        transition: ease-in-out .3s;
+        rotate: 35deg;
+    }
+}
+
 
 .header-text {
     margin-top: 20%;
@@ -584,6 +598,10 @@ nav .fa-solid {
 
     .copyright {
         font-size: 14px;
+    }
+
+    .theme-btn {
+        width: 90px;
     }
 }
 

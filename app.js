@@ -108,8 +108,10 @@ let toggleBtn = document.querySelector(".toggle-btn");
 let btnIcon = document.getElementById("btnIcon");
 const softwareDevText = document.querySelector(".software-dev");
 const arrowUp = document.querySelector(".fa-arrow-up");
+const lightDarkLi = document.querySelector(".light-dark");
+const themeBtn = document.querySelector(".theme-btn")
 
-toggleBtn.onclick = function () {
+themeBtn.onclick = function () {
     document.body.classList.toggle("light-mode");
 
     if (document.body.classList.contains("light-mode")) {
@@ -118,12 +120,17 @@ toggleBtn.onclick = function () {
         goTopBtn.style.visibility = "visible";
         softwareDevText.style.color = "black";
         arrowUp.style.color = "white";
+        lightDarkLi.innerText = "Dark"
+        themeBtn.style.border = "1px solid black"
     } else {
         toggleBtn.classList = "fa-regular fa-sun toggle-btn";
         sidemenu.style.right = "-200px";
         goTopBtn.style.visibility = "visible";
         softwareDevText.style.color = "var(--main-color)";
         arrowUp.style.color = "black";
+        lightDarkLi.innerText = "Light"
+        themeBtn.style.border = "1px solid white"
+        
     }
 }
 
@@ -137,24 +144,6 @@ function closemenu() {
     sidemenu.style.right = "-200px";
     goTopBtn.style.visibility = "visible"
 }
-
-//CONTACT SUBMISSION FORM HANDLING
-// const scriptURL = 'https://script.google.com/macros/s/AKfycbzf8vu0unRNB9UFEnE-k0zrMXOLeosHgq-d4ugijMlxLcGn41pu3f9VfEhyz0321OcIUQ/exec'
-// const form = document.forms['submit-to-google-sheet']
-// const msg = document.getElementById("msg");
-
-// form.addEventListener('submit', e => {
-//     e.preventDefault()
-//     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-//         .then(response => {
-//             msg.innerHTML = "Message sent successfully";
-//             setTimeout(function () {
-//                 msg.innerHTML = "";
-//             }, 5000)
-//             form.reset()
-//         })
-//         .catch(error => console.error('Error!', error.message))
-// })
 
 //FOOTER COPYRIGHT TEXT
 const year = document.querySelector('.year');
