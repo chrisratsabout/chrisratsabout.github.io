@@ -110,6 +110,7 @@ const softwareDevText = document.querySelector(".software-dev");
 const arrowUp = document.querySelector(".fa-arrow-up");
 const lightDarkLi = document.querySelector(".light-dark");
 const themeBtn = document.querySelector(".theme-btn")
+const w = document.documentElement.clientWidth
 
 themeBtn.onclick = function () {
     document.body.classList.toggle("light-mode");
@@ -126,11 +127,10 @@ themeBtn.onclick = function () {
         toggleBtn.classList = "fa-regular fa-sun toggle-btn";
         sidemenu.style.right = "-200px";
         goTopBtn.style.visibility = "visible";
-        softwareDevText.style.color = "var(--main-color)";
         arrowUp.style.color = "black";
         lightDarkLi.innerText = "Light"
         themeBtn.style.border = "1px solid white"
-        
+        softwareDevText.style.color = "#fff";  
     }
 }
 
