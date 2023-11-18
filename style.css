@@ -267,6 +267,7 @@ nav ul li a:hover::after {
     display: flex;
     align-items: center;
     gap: 8px;
+    padding-left: 4px;
 }
 
 /* Skills */
