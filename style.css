@@ -136,6 +136,8 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 20%;
     font-size: 30px;
+    position: relative;
+    left: 0px;
 }
 
 .header-text h1 {

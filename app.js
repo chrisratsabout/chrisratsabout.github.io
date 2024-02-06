@@ -151,3 +151,11 @@ const currentYear = new Date().getFullYear();
 
 
 year.innerHTML = currentYear;
+
+//HEADER PARALLAX SCROLL
+const headerText = document.querySelector(".header-text");
+
+window.addEventListener('scroll', ()=> {
+    let value = window.scrollY;
+    headerText.style.left = value * -2 + 'px';
+})
