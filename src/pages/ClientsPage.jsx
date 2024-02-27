@@ -25,22 +25,22 @@ const ClientsPage = () => {
           <div className="clients-logo-box">
             <img
               className="client-logo"
-              src=" src/images/clients/jamie-drake-art.png"
+              src="images/clients/jamie-drake-art.png"
               alt=""
             />
             <img
               className="client-logo"
-              src=" src/images/clients/the-murmurations.png"
+              src="images/clients/the-murmurations.png"
               alt=""
             />
             <img
               className="client-logo"
-              src=" src/images/clients/del-aura.png"
+              src="images/clients/del-aura.png"
               alt=""
             />
             <img
               className="client-logo"
-              src=" src/images/clients/lasidas.png"
+              src="images/clients/lasidas.png"
               alt=""
             />
 

@@ -20,7 +20,7 @@ const HomePage = () => {
       </nav>
       <div className="content-container">
         <div className="home-text">
-          <img src="src/images/logo.png" alt="logo" />
+          <img src="images/logo.png" alt="logo" />
           <h1>Chris Ratsabout</h1>
           <p>
             <span className="gray-text">Full Stack Developer</span>

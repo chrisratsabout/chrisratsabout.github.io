@@ -23,7 +23,7 @@ const AboutPage = () => {
         <div className="about-text-container">
           <h1>About</h1>
           <img
-            src=" src/images/headshot-square.jpg"
+            src="images/headshot-square.jpg"
             alt="Chris Ratsabout headshot"
           />
           <p>
@@ -49,46 +49,46 @@ const AboutPage = () => {
         {/* Logo Scroll */}
         <div className="logos">
           <div className="logos-slide">
-            <img src=" src/images/logos/html.png" alt="html" />
-            <img src=" src/images/logos/css.png" alt="css" />
-            <img src=" src/images/logos/js.png" alt="js" />
-            <img src=" src/images/logos/react.png" alt="react" />
-            <img src=" src/images/logos/java.png" alt="java" />
-            <img src=" src/images/logos/spring.png" alt="spring" />
-            <img src=" src/images/logos/postgres.png" alt="postgres" />
-            <img src=" src/images/logos/mysql.png" alt="mysql" />
-            <img src=" src/images/logos/node.png" alt="node" />
-            <img src=" src/images/logos/github.png" alt="github" />
-            <img src=" src/images/logos/intellij.png" alt="intellij" />
-            <img src=" src/images/logos/vscode.png" alt="vscode" />
+            <img src="images/logos/html.png" alt="html" />
+            <img src="images/logos/css.png" alt="css" />
+            <img src="images/logos/js.png" alt="js" />
+            <img src="images/logos/react.png" alt="react" />
+            <img src="images/logos/java.png" alt="java" />
+            <img src="images/logos/spring.png" alt="spring" />
+            <img src="images/logos/postgres.png" alt="postgres" />
+            <img src="images/logos/mysql.png" alt="mysql" />
+            <img src="images/logos/node.png" alt="node" />
+            <img src="images/logos/github.png" alt="github" />
+            <img src="images/logos/intellij.png" alt="intellij" />
+            <img src="images/logos/vscode.png" alt="vscode" />
           </div>
           <div className="logos-slide">
-            <img src=" src/images/logos/html.png" alt="html" />
-            <img src=" src/images/logos/css.png" alt="css" />
-            <img src=" src/images/logos/js.png" alt="js" />
-            <img src=" src/images/logos/react.png" alt="react" />
-            <img src=" src/images/logos/java.png" alt="java" />
-            <img src=" src/images/logos/spring.png" alt="spring" />
-            <img src=" src/images/logos/postgres.png" alt="postgres" />
-            <img src=" src/images/logos/mysql.png" alt="mysql" />
-            <img src=" src/images/logos/node.png" alt="node" />
-            <img src=" src/images/logos/github.png" alt="github" />
-            <img src=" src/images/logos/intellij.png" alt="intellij" />
-            <img src=" src/images/logos/vscode.png" alt="vscode" />
+            <img src="images/logos/html.png" alt="html" />
+            <img src="images/logos/css.png" alt="css" />
+            <img src="images/logos/js.png" alt="js" />
+            <img src="images/logos/react.png" alt="react" />
+            <img src="images/logos/java.png" alt="java" />
+            <img src="images/logos/spring.png" alt="spring" />
+            <img src="images/logos/postgres.png" alt="postgres" />
+            <img src="images/logos/mysql.png" alt="mysql" />
+            <img src="images/logos/node.png" alt="node" />
+            <img src="images/logos/github.png" alt="github" />
+            <img src="images/logos/intellij.png" alt="intellij" />
+            <img src="images/logos/vscode.png" alt="vscode" />
           </div>
           <div className="logos-slide">
-            <img src=" src/images/logos/html.png" alt="html" />
-            <img src=" src/images/logos/css.png" alt="css" />
-            <img src=" src/images/logos/js.png" alt="js" />
-            <img src=" src/images/logos/react.png" alt="react" />
-            <img src=" src/images/logos/java.png" alt="java" />
-            <img src=" src/images/logos/spring.png" alt="spring" />
-            <img src=" src/images/logos/postgres.png" alt="postgres" />
-            <img src=" src/images/logos/mysql.png" alt="mysql" />
-            <img src=" src/images/logos/node.png" alt="node" />
-            <img src=" src/images/logos/github.png" alt="github" />
-            <img src=" src/images/logos/intellij.png" alt="intellij" />
-            <img src=" src/images/logos/vscode.png" alt="vscode" />
+            <img src="images/logos/html.png" alt="html" />
+            <img src="images/logos/css.png" alt="css" />
+            <img src="images/logos/js.png" alt="js" />
+            <img src="images/logos/react.png" alt="react" />
+            <img src="images/logos/java.png" alt="java" />
+            <img src="images/logos/spring.png" alt="spring" />
+            <img src="images/logos/postgres.png" alt="postgres" />
+            <img src="images/logos/mysql.png" alt="mysql" />
+            <img src="images/logos/node.png" alt="node" />
+            <img src="images/logos/github.png" alt="github" />
+            <img src="images/logos/intellij.png" alt="intellij" />
+            <img src="images/logos/vscode.png" alt="vscode" />
           </div>
         </div>
       </div>
