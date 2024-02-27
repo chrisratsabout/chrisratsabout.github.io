@@ -1,0 +1,99 @@
+/*** About Box Styles ***/
+.blue-text {
+  color: var(--blue-color);
+}
+
+.gray-text {
+  color: rgb(181, 181, 181);
+}
+
+.about-box {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 70%;
+}
+
+.about-box img {
+  border-radius: 50%;
+  width: 300px;
+}
+
+.here {
+   color: rgb(93, 161, 211);
+   text-decoration: none;
+}
+
+.here:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*** LOGO SCROLL ***/
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background-color: var(--background-color);
+  white-space: nowrap;
+  position: relative;
+  margin-bottom: 70px;
+  width: 100vw;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 25s slide infinite linear;
+}
+
+.logos-slide img {
+  width: 100px;
+  height: 100px;
+  margin: 0 40px;
+}
+
+/*** ABOUT MOBILE STYLES ***/
+@media (max-width: 600px) {
+  .about-box h1 {
+    /* display: none; */
+    font-size: 1.5rem;
+  }
+
+  .about-box {
+    gap: 0;
+    overflow: scroll;
+  }
+
+  .about-box img {
+    width: 200px;
+  }
+
+  .logos {
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  .logos img {
+    width: 50px;
+    height: 50px;
+  }
+}
