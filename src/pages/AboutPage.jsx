@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "../css/about.css";
 import { Link } from "react-router-dom";
 
-const AboutPage = () => {
+const AboutPage = (props) => {
+  useEffect(()=> {
+    document.title = props.title;
+  })
   return (
     <>
       <nav>

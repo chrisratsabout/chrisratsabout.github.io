@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import "../css/contact.css";
 
-const ContactPage = () => {
+const ContactPage = (props) => {
+  useEffect(()=> {
+    document.title = props.title;
+  })
   return (
     <>
       <div className="contact-box">
