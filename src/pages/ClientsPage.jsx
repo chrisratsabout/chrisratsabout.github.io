@@ -46,6 +46,11 @@ const ClientsPage = (props) => {
               src="images/clients/lasidas.png"
               alt=""
             />
+                        <img
+              className="client-logo"
+              src="images/clients/talltale-tavern.png"
+              alt=""
+            />
 
             {/* <p>The Murmurations</p>
                         <p>Jamie Drake</p>
