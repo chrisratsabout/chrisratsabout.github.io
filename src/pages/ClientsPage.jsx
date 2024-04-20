@@ -1,11 +1,11 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../css/clients.css";
 
 const ClientsPage = (props) => {
-  useEffect(()=> {
+  useEffect(() => {
     document.title = props.title;
-  })
+  });
   return (
     <>
       <nav>
@@ -46,9 +46,14 @@ const ClientsPage = (props) => {
               src="images/clients/lasidas.png"
               alt=""
             />
-                        <img
+            <img
               className="client-logo"
               src="images/clients/talltale-tavern.png"
+              alt=""
+            />
+            <img
+              className="client-logo"
+              src="images/clients/tomniscient.png"
               alt=""
             />
 
