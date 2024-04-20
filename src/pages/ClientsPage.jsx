@@ -26,42 +26,54 @@ const ClientsPage = (props) => {
         <h1>Clients</h1>
         <div className="clients-inner-box">
           <div className="clients-logo-box">
-            <img
-              className="client-logo"
-              src="images/clients/jamie-drake-art.png"
-              alt=""
-            />
-            <img
-              className="client-logo"
-              src="images/clients/the-murmurations.png"
-              alt=""
-            />
-            <img
-              className="client-logo"
-              src="images/clients/del-aura.png"
-              alt=""
-            />
-            <img
-              className="client-logo"
-              src="images/clients/lasidas.png"
-              alt=""
-            />
-            <img
-              className="client-logo"
-              src="images/clients/talltale-tavern.png"
-              alt=""
-            />
-            <img
-              className="client-logo"
-              src="images/clients/tomniscient.png"
-              alt=""
-            />
-
-            {/* <p>The Murmurations</p>
-                        <p>Jamie Drake</p>
-                        <p>Del Aura</p>
-                        <p>Lasidas</p>
-                        <p>Talltale Tavern</p>  */}
+            <div className="client-card">
+              <img src="images/clients/jamie-drake-cover.jpg" alt="" />
+              <img
+                className="client-logo"
+                src="images/clients/jamie-drake-art.png"
+                alt=""
+              />
+            </div>
+            <div className="client-card">
+              <img src="images/clients/the-murmurations-cover.jpg" alt="" />
+              <img
+                className="client-logo"
+                src="images/clients/the-murmurations.png"
+                alt=""
+              />
+            </div>
+            <div className="client-card">
+              <img src="images/clients/del-aura-cover.jpg" alt="" />
+              <img
+                className="client-logo"
+                src="images/clients/del-aura.png"
+                alt=""
+              />
+            </div>
+            <div className="client-card">
+              <img src="images/clients/lasidas-cover.jpg" alt="" />
+              <img
+                className="client-logo"
+                src="images/clients/lasidas.png"
+                alt=""
+              />
+            </div>
+            <div className="client-card">
+              <img src="images/clients/talltale-tavern-cover.jpg" alt="" />
+              <img
+                className="client-logo"
+                src="images/clients/talltale-tavern.png"
+                alt=""
+              />
+            </div>
+            <div className="client-card">
+              <img src="images/clients/tomniscient-cover.jpg" alt="" />
+              <img
+                className="client-logo"
+                src="images/clients/tomniscient.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
