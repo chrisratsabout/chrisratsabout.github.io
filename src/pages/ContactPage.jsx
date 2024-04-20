@@ -40,7 +40,6 @@ const ContactPage = (props) => {
             <label htmlFor="message">Message:</label>
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
           </div>
-          <input type="hidden" name="_next" value="https://www.chrisratsabout.com/thanks"></input>
           <button type="submit">Submit</button>
           
         </form>
