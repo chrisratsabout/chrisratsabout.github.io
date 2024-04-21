@@ -25,6 +25,11 @@
   .client-card img:nth-child(1) {
     width: 300px;
   }
+
+  .client-card img:nth-child(1):hover {
+    filter: brightness(75%);
+    transition: .3s ease-in-out;
+  }
   
   .clients-logo-box {
     width: 100%;

@@ -27,7 +27,9 @@ const ClientsPage = (props) => {
         <div className="clients-inner-box">
           <div className="clients-logo-box">
             <div className="client-card">
-              <img src="images/clients/jamie-drake-cover.jpg" alt="" />
+              <a href="https://sobreratas.github.io/jamie-test/" target="blank">
+                <img src="images/clients/jamie-drake-cover.jpg" alt="" />
+              </a>
               <img
                 className="client-logo"
                 src="images/clients/jamie-drake-art.png"
@@ -35,7 +37,12 @@ const ClientsPage = (props) => {
               />
             </div>
             <div className="client-card">
-              <img src="images/clients/the-murmurations-cover.jpg" alt="" />
+              <a
+                href="https://sobreratas.github.io/the-murmurations"
+                target="blank"
+              >
+                <img src="images/clients/the-murmurations-cover.jpg" alt="" />
+              </a>
               <img
                 className="client-logo"
                 src="images/clients/the-murmurations.png"
@@ -43,7 +50,9 @@ const ClientsPage = (props) => {
               />
             </div>
             <div className="client-card">
-              <img src="images/clients/del-aura-cover.jpg" alt="" />
+              <a href="https://sobreratas.github.io/del-aura" target="blank">
+                <img src="images/clients/del-aura-cover.jpg" alt="" />
+              </a>
               <img
                 className="client-logo"
                 src="images/clients/del-aura.png"
@@ -51,7 +60,9 @@ const ClientsPage = (props) => {
               />
             </div>
             <div className="client-card">
-              <img src="images/clients/lasidas-cover.jpg" alt="" />
+              <a href="https://sobreratas.github.io/lasidas" target="blank">
+                <img src="images/clients/lasidas-cover.jpg" alt="" />
+              </a>
               <img
                 className="client-logo"
                 src="images/clients/lasidas.png"
@@ -59,7 +70,12 @@ const ClientsPage = (props) => {
               />
             </div>
             <div className="client-card">
-              <img src="images/clients/talltale-tavern-cover.jpg" alt="" />
+              <a
+                href="https://sobreratas.github.io/talltale-tavern"
+                target="blank"
+              >
+                <img src="images/clients/talltale-tavern-cover.jpg" alt="" />
+              </a>
               <img
                 className="client-logo"
                 src="images/clients/talltale-tavern.png"
@@ -67,7 +83,9 @@ const ClientsPage = (props) => {
               />
             </div>
             <div className="client-card">
-              <img src="images/clients/tomniscient-cover.jpg" alt="" />
+              <a href="https://sobreratas.github.io/tomniscient" target="blank">
+                <img src="images/clients/tomniscient-cover.jpg" alt="" />
+              </a>
               <img
                 className="client-logo"
                 src="images/clients/tomniscient.png"
