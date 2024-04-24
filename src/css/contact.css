@@ -6,6 +6,15 @@ textarea {
   font-size: 1rem;
 }
 
+.wrapper {
+  height: 100vh;
+  background-image: url("public/images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .contact-box {
     display: flex;
     flex-direction: column;

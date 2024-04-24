@@ -7,6 +7,7 @@ const HomePage = (props) => {
   })
   return (
     <>
+    <div className="wrapper">
       <nav>
         <Link to="/" className="home-btn nav-btn active">
           Home
@@ -29,6 +30,7 @@ const HomePage = (props) => {
             <span className="gray-text">Full Stack Developer</span>
           </p>
         </div>
+      </div>
       </div>
     </>
   );

@@ -1,3 +1,12 @@
+.clients-wrapper {
+  height: 100%;
+  background-image: url("/images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .clients-box {
     display: flex;
     justify-content: start;
@@ -42,3 +51,11 @@
   .client-logo {
     width: 200px;
   }
+
+  /* @media screen and (max-width: 400px) {
+    .clients-wrapper {
+      background-image: url("/images/clients-mobile-background.jpg");
+      background-position: top;
+      background-attachment: scroll;
+    }
+  } */

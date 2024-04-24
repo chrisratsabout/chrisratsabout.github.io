@@ -53,7 +53,7 @@
 .logos {
   overflow: hidden;
   padding: 60px 0;
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   white-space: nowrap;
   position: relative;
   margin-bottom: 70px;
