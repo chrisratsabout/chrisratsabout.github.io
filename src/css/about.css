@@ -53,10 +53,8 @@
 .logos {
   overflow: hidden;
   padding: 60px 0;
-  /* background-color: var(--background-color); */
   white-space: nowrap;
   position: relative;
-  /* margin-bottom: 70px; */
   width: 100vw;
 }
 
@@ -74,7 +72,6 @@
 /*** ABOUT MOBILE STYLES ***/
 @media (max-width: 600px) {
   .about-box h1 {
-    /* display: none; */
     font-size: 1.5rem;
   }
 

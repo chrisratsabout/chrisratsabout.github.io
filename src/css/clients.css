@@ -38,6 +38,7 @@
   .client-card img:nth-child(1):hover {
     filter: brightness(75%);
     transition: .3s ease-in-out;
+    scale: 1.1;
   }
   
   .clients-logo-box {
@@ -51,11 +52,3 @@
   .client-logo {
     width: 200px;
   }
-
-  /* @media screen and (max-width: 400px) {
-    .clients-wrapper {
-      background-image: url("/images/clients-mobile-background.jpg");
-      background-position: top;
-      background-attachment: scroll;
-    }
-  } */
