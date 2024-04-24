@@ -8,7 +8,7 @@ const ClientsPage = (props) => {
   });
   return (
     <>
-      <div className="clients-wrapper">
+      <div className="wrapper">
         <nav>
           <Link to="/" className="home-btn nav-btn">
             Home
