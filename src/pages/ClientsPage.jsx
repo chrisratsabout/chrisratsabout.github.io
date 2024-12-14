@@ -27,29 +27,16 @@ const ClientsPage = (props) => {
           <h1>Clients</h1>
           <div className="clients-inner-box">
             <div className="clients-logo-box">
-              <div className="client-card">
+            <div className="client-card">
                 <a
-                  href="https://sobreratas.github.io/jamie-test/"
+                  href="http://www.tomniscient.com/"
                   target="blank"
                 >
-                  <img src="images/clients/jamie-drake-cover.jpg" alt="" />
+                  <img src="images/clients/tomniscient-ep.jpg" alt="" />
                 </a>
                 <img
                   className="client-logo"
-                  src="images/clients/jamie-drake-art.png"
-                  alt=""
-                />
-              </div>
-              <div className="client-card">
-                <a
-                  href="https://sobreratas.github.io/the-murmurations"
-                  target="blank"
-                >
-                  <img src="images/clients/the-murmurations-cover.jpg" alt="" />
-                </a>
-                <img
-                  className="client-logo"
-                  src="images/clients/the-murmurations.png"
+                  src="images/clients/tomniscient.png"
                   alt=""
                 />
               </div>
@@ -86,16 +73,30 @@ const ClientsPage = (props) => {
                   alt=""
                 />
               </div>
+
               <div className="client-card">
                 <a
-                  href="https://sobreratas.github.io/tomniscient"
+                  href="https://sobreratas.github.io/the-murmurations"
                   target="blank"
                 >
-                  <img src="images/clients/tomniscient-cover.jpg" alt="" />
+                  <img src="images/clients/the-murmurations-cover.jpg" alt="" />
                 </a>
                 <img
                   className="client-logo"
-                  src="images/clients/tomniscient.png"
+                  src="images/clients/the-murmurations.png"
+                  alt=""
+                />
+              </div>
+              <div className="client-card">
+                <a
+                  href="https://sobreratas.github.io/jamie-drake-art/"
+                  target="blank"
+                >
+                  <img src="images/clients/jamie-drake-cover.jpg" alt="" />
+                </a>
+                <img
+                  className="client-logo"
+                  src="images/clients/jamie-drake-art.png"
                   alt=""
                 />
               </div>
