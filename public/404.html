@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Redirect all unknown URLs back to index.html for SPA routing
+      var pathname = window.location.pathname;
+      if (!pathname.endsWith('/')) {
+        pathname += '/';
+      }
+      window.location.replace(pathname + 'index.html' + window.location.search + window.location.hash);
+    </script>
+  </head>
+  <body></body>
+</html>
