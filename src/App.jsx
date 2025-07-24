@@ -5,12 +5,11 @@ import AboutPage from "./pages/AboutPage";
 import ClientsPage from "./pages/ClientsPage";
 import ContactPage from "./pages/ContactPage";
 import ThanksPage from "./pages/ThanksPage";
-import { HashRouter } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <HashRouter>
+
         <Routes>
           <Route
             path="/"
@@ -30,7 +29,7 @@ function App() {
             element={<ThanksPage title={"Thanks"} />}
           ></Route>
         </Routes>
-      </HashRouter>
+
     </>
   );
 }
