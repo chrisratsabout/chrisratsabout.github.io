@@ -16,17 +16,17 @@ function App() {
             path="/"
             element={<HomePage title={"Chris Ratsabout"} />}
           ></Route>
-          <Route path="/about" element={<AboutPage title={"About"} />}></Route>
+          <Route path="/#/about" element={<AboutPage title={"About"} />}></Route>
           <Route
-            path="/clients"
+            path="/#/clients"
             element={<ClientsPage title={"Clients"} />}
           ></Route>
           <Route
-            path="/contact"
+            path="/#/contact"
             element={<ContactPage title={"Contact"} />}
           ></Route>
           <Route
-            path="/thanks"
+            path="/#/thanks"
             element={<ThanksPage title={"Thanks"} />}
           ></Route>
         </Routes>
