@@ -313,7 +313,7 @@ h1 {
 .releases img {
   width: 20%;
   border-radius: 12px;
-  border: 1px solid #fff;
+  border: 1px solid;
 }
 
 @media (max-width: 768px) {
