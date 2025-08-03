@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans, Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #000;
+}
+
+video {
+  left: 38%;
+  width: 75%;
+  /* min-height: 100%;
+  min-width: 100%; */
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+  top: 34%;
+  transform: translate(-50%, -50%);
+  /* filter: blur(1px); */
+  border-radius: 1rem;
+}
+
+.header-section {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-image: url("");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  );
+  z-index: 1;
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+}
+
+.header-section p {
+  font-size: 1.3rem;
+  letter-spacing: 1rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-weight: normal;
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.about-container h2 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.about-card {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  /* box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030; */
+  border-radius: 1rem;
+  border: 1px solid #fff;
+  overflow: hidden;
+}
+
+.about-card-img {
+  height: 300px;
+}
+
+.about-card-img img {
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.about-card-text {
+  flex-basis: 67%;
+  padding: 1rem;
+  line-height: 1.5;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+
+.about-card-text p {
+  font-size: 1.2rem;
+}
+
+.h2-class {
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem 0;
+  color: #fff;
+}
+
+.photo-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.photo-row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.photo-card {
+  flex: 1;
+  position: relative;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  /* box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030; */
+}
+
+.img-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.video-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.video-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.video-card {
+  text-align: center;
+  padding: 1rem;
+  width: 25%;
+  min-width: 300px;
+  max-width: 400px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  /* background-color: #fff; */
+  /* box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030; */
+}
+
+.video-card img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.link-container {
+  position: relative;
+  width: 100%;
+}
+
+.link-container a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #efefef;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 2.4rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.link-container a:hover {
+  color: #adadad;
+}
+
+.personal-work {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.personal-work p {
+  color: #fff;
+  text-align: center;
+}
+
+.artist-horizontal-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  /* flex-wrap: wrap; */
+  gap: 1rem;
+  width: 60%;
+}
+
+.artist-container {
+  flex-basis: 33%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  gap: 2rem;
+}
+
+.artist-icons {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.artist-icons i {
+  font-size: 2rem;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.artist-icons i:hover {
+  transform: translateY(-5px);
+}
+
+.artist-container h3 {
+  font-size: 2rem;
+}
+
+.releases {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.releases img {
+  width: 20%;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  video {
+    width: 100%;
+    left: 50%;
+    top: 30%;
+    border-radius: 0;
+  }
+  .header-section p {
+    top: 20%;
+  }
+
+  h1 {
+    font-size: 4rem;
+    top: 35%;
+  }
+
+  .gradient-overlay {
+    display: none;
+  }
+
+  .photo-card {
+    flex: 1 1 100%; /* stack cards vertically on small screens */
+  }
+
+  .img-caption {
+    font-size: 1.2rem;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .about-card {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .about-card-img {
+    flex-basis: 33%;
+  }
+
+  .about-card-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-card-text {
+    flex-basis: 67%;
+    padding: 1rem;
+  }
+
+  .video-card {
+    width: 100%;
+  }
+
+  .artist-horizontal-container {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+
+  .artist-container {
+    flex-basis: 100%;
+  }
+
+  .releases {
+    gap: 0.5rem;
+  }
+
+  .releases img {
+    width: 25%;
+    border-radius: 8px;
+  }
+}
