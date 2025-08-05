@@ -220,14 +220,14 @@ body {
 }
 
 .facebook {
-  width: 80%;
+  width: 70%;
   border-radius: 1rem;
   box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030;
 }
 
 .website-demo {
   display: flex;
-  width: 80%;
+  width: 70%;
   height: 80%;
   padding: 0;
 }
