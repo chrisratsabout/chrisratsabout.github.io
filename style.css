@@ -212,6 +212,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 4rem;
 }
 
 #overview-section h2 {
