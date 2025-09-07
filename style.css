@@ -439,6 +439,10 @@ body {
 }
 
 #contact-section form button {
+  appearance: none;
+  -webkit-appearance: none; /* iOS Safari */
+  -moz-appearance: none;    /* Firefox */
+
   text-decoration: none;
   /* border-radius: 1rem; */
   box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030;
@@ -451,10 +455,18 @@ body {
   transition: background-color 0.3s ease-in-out;
   width: 300px;
   display: block;
+
+  background-color: #fff; /* explicitly set background */
 }
 
 #contact-section form button:hover {
   background-color: #e7e7e7;
+}
+
+/* Active (on click / mobile tap) */
+#contact-section form button:active {
+  background-color: #e0e0e0; /* darker gray */
+  transform: scale(0.98);   /* small press effect */
 }
 
 
@@ -1099,6 +1111,10 @@ video {
   }
 
   /* Contact Mobile Styles */
+  #contact-section {
+    padding: 1.2rem;
+
+  }
   #contact-section form {
     width: 100%;
   }
