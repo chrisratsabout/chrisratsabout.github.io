@@ -95,7 +95,9 @@ body {
   width: 30px !important;
   margin: 0 6px;
     filter: brightness(50%);
+      box-shadow: none;
 }
+
 
 .us-flag:hover,
 .lao-flag:hover {
@@ -107,6 +109,7 @@ body {
 .us-flag.active,
 .lao-flag.active {
   filter: brightness(100%);
+    box-shadow: 0 4px 8px #0003, 0 10px 24px #00000030;
 }
 
 .menu-link {
