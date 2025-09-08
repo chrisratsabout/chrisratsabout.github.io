@@ -11,6 +11,7 @@
     <title>Chris Ratsabout</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/2025-logo.png" type="image/x-icon">
+     <script src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/8efc22d7af.js" crossorigin="anonymous"></script>
 </head>
 
@@ -22,7 +23,14 @@
     <!-- ********************************-->
     <header>
         <section id="header-section">
-            <img src="images/2025-logo.png" alt="logo">
+            <img class="header-logo" src="images/2025-logo.png" alt="logo">
+                        <div class="lang-container">
+                <p data-lang="title">Language:</p>
+                <div class="menu-link">
+                    <img onclick="setLanguage('en')" class="us-flag" src="images/eng.png" alt="eng">
+                    <img onclick="setLanguage('la')" class="lao-flag" src="images/lao.png" alt="lao">
+                </div>
+            </div>
             <h1>Chris Ratsabout</h1>
             <p>Web Developer</p>
         </section>

@@ -37,14 +37,26 @@ body {
 }
 
 @keyframes softBounce {
-  0%   { transform: translateY(0); opacity: 0; }
-  25%  { transform: translateY(20px); }
-  50%  { transform: translateY(0px); }
-  75%  { transform: translateY(10px); }
-  100% { transform: translateY(0); opacity: 1;}
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-#header-section img {
+.header-logo {
   width: 40%;
   animation: softBounce 1s ease-in-out;
   z-index: 2;
@@ -60,6 +72,46 @@ body {
   font-size: 1.9rem;
   animation: logoFadeIn 0.6s ease-in-out;
   z-index: 2;
+}
+
+/* Language Styles */
+.lang-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.lang-container p {
+  font-size: 0.8rem !important;
+  animation: none !important;
+}
+.us-flag,
+.lao-flag {
+  height: 20px;
+  width: 30px !important;
+  margin: 0 6px;
+    filter: brightness(50%);
+}
+
+.us-flag:hover,
+.lao-flag:hover {
+  cursor: pointer;
+  filter: brightness(75%);
+  transition: 0.3s ease-in-out;
+}
+
+.us-flag.active,
+.lao-flag.active {
+  filter: brightness(100%);
+}
+
+.menu-link {
+  display: flex;
+  justify-content: center;
 }
 
 /* Portfolio Styles */
@@ -427,7 +479,7 @@ body {
   padding: 1rem;
   border: none;
   /* border-radius: 0.5rem; */
-   font-size: 1.3rem;
+  font-size: 1.3rem;
   box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030;
 }
 
@@ -441,7 +493,7 @@ body {
 #contact-section form button {
   appearance: none;
   -webkit-appearance: none; /* iOS Safari */
-  -moz-appearance: none;    /* Firefox */
+  -moz-appearance: none; /* Firefox */
 
   text-decoration: none;
   /* border-radius: 1rem; */
@@ -466,9 +518,8 @@ body {
 /* Active (on click / mobile tap) */
 #contact-section form button:active {
   background-color: #e0e0e0; /* darker gray */
-  transform: scale(0.98);   /* small press effect */
+  transform: scale(0.98); /* small press effect */
 }
-
 
 /* About Style */
 #about-section {
@@ -880,7 +931,7 @@ video {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding: 2rem;
   text-align: center;
   width: 100%;
@@ -1015,7 +1066,7 @@ video {
   .accordion {
     width: 90%;
   }
-  
+
   /* Stories Mobile Styles */
 
   #stories-section {
@@ -1113,7 +1164,6 @@ video {
   /* Contact Mobile Styles */
   #contact-section {
     padding: 1.2rem;
-
   }
   #contact-section form {
     width: 100%;
@@ -1154,5 +1204,4 @@ video {
   .how-to-order-instructions {
     width: 100%;
   }
-
 }
