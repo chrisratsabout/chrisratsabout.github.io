@@ -47,6 +47,24 @@ const benefitTranslations = {
   },
 };
 
+
+const contactTranslations = {
+  en: {
+    title: "Contact",
+    text1: "Name:",
+    text2: "Email:",
+    text3: "Message:",
+    text4: "Submit",
+  },
+  la: {
+    title: "ຕິດຕໍ່",
+    text1: "ຊື່:",
+    text2: "ອີເມວ:",
+    text3: "ຂໍ້ຄວາມ:",
+    text4: "ສົ່ງ",
+  },
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   setLanguage("en");
 });
@@ -91,10 +109,10 @@ function setLanguage(lang) {
   //   el.textContent = vendorsTranslations[lang][vendorsKey] || vendorsKey;
   // });
 
-  // document.querySelectorAll("[data-contact]").forEach((el) => {
-  //   const contactKey = el.getAttribute("data-contact");
-  //   el.textContent = contactTranslations[lang][contactKey] || contactKey;
-  // });
+  document.querySelectorAll("[data-contact]").forEach((el) => {
+    const contactKey = el.getAttribute("data-contact");
+    el.textContent = contactTranslations[lang][contactKey] || contactKey;
+  });
 
   document.querySelectorAll("[data-lang]").forEach((el) => {
     const langKey = el.getAttribute("data-lang");
