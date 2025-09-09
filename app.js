@@ -1,4 +1,15 @@
 //TRANSLATIONS
+const headerTranslations = {
+  en: {
+    title: "Chris Ratsabout",
+    text1: "Web Developer",
+  },
+  la: {
+    title: "ຄຣິສ ຣາດສາບຸຊ",
+    text1: "ນັກພັດທະນາ ເວັບໄຊ້",
+  },
+};
+
 const langTranslations = {
   en: {
     title: "Language:",
@@ -277,6 +288,11 @@ function setLanguage(lang) {
   document.querySelectorAll("[data-faq]").forEach((el) => {
     const faqKey = el.getAttribute("data-faq");
     el.textContent = faqTranslations[lang][faqKey] || faqKey;
+  });
+
+  document.querySelectorAll("[data-header]").forEach((el) => {
+    const headerKey = el.getAttribute("data-header");
+    el.textContent = headerTranslations[lang][headerKey] || headerKey;
   });
 
   document.querySelectorAll("[data-lang]").forEach((el) => {
