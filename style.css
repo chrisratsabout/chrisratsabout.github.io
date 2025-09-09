@@ -13,7 +13,7 @@ body {
 }
 
 .english-font {
-   font-family: Inter, Arial, sans-serif;
+  font-family: Inter, Arial, sans-serif;
 }
 
 .lao-font {
@@ -142,22 +142,21 @@ body {
   height: 20px;
   width: 30px !important;
   margin: 0 6px;
-    filter: brightness(50%);
-      box-shadow: none;
+  filter: brightness(50%);
+  box-shadow: none;
+  transition: 0.3s ease-in-out;
 }
-
 
 .us-flag:hover,
 .lao-flag:hover {
   cursor: pointer;
   filter: brightness(75%);
-  transition: 0.3s ease-in-out;
 }
 
 .us-flag.active,
 .lao-flag.active {
   filter: brightness(100%);
-    box-shadow: 0 4px 8px #0003, 0 10px 24px #00000030;
+  box-shadow: 0 4px 8px #0003, 0 10px 24px #00000030;
 }
 
 .menu-link {
