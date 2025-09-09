@@ -113,6 +113,58 @@ const portfolioTranslations = {
   },
 };
 
+const pricingTranslations = {
+  en: {
+    title: "Start Pricing",
+    text1:
+      "Chris promises an affordable and easy-to-use website that loads fast and displays properly on all devices. He strives to meet all his clients' needs in a timely manner and promptly respond to their questions and requests.",
+    text2: "First Year: $120",
+    text3: "2.500.000 LAK",
+    text4: "4000 THB",
+    text5: "Price Includes:",
+    text6: "Web design (how it will look)",
+    text7: "Web development (coding and deploying it)",
+    text8: "Website domain name (dot com)",
+    text9:
+      "One landing page (header, about, contact, and 2 sections of your choice)",
+    text10: "Website that links users to all your existing social media",
+    text11: "*After First Year: $100",
+    text12: "2.150.000 LAK",
+    text13: "3200 THB",
+    text14: "Yearly Price Includes:",
+    text15: "Routine Maintenance",
+    text16: "Unlimited edits (additions/revisions to existing sections)",
+    text17: "Keep your domain name (dot com)",
+    text18:
+      "Note: This will be a yearly fee to make sure your website stays up to date.",
+  },
+  la: {
+    title: "ລາຄາ",
+    text1:
+      "ຄຣິສສັນຍາວ່າເວັບໄຊທ໌ທີ່ມີລາຄາບໍ່ແພງແລະໃຊ້ງ່າຍທີ່ໂຫລດໄວແລະສະແດງຜົນຢ່າງຖືກຕ້ອງໃນທຸກອຸປະກອນ. ລາວພະຍາຍາມຕອບສະຫນອງຄວາມຕ້ອງການຂອງລູກຄ້າທັງຫມົດໃນລັກສະນະທີ່ທັນເວລາແລະຕອບຄໍາຖາມແລະຄໍາຮ້ອງຂໍແລະຕອບສະໜອງພວກທ່ານ.",
+    text2: "ປີທໍາອິດ: $120",
+    text3: "2.500.000 ກີບ",
+    text4: "4000 ບາດ",
+    text5: "ລາຄາລວມ:",
+    text6: "ການອອກແບບເວັບ (ມັນຈະມີລັກສະນະແນວໃດ)",
+    text7: "ການ​ພັດ​ທະ​ນາ​ເວັບ​ໄຊ​ຕ​໌ (ການ​ຂຽນ​ລະ​ຫັດ​ແລະ​ການ​ນໍາ​ໃຊ້​ມັນ​)",
+    text8: "ຊື່ໂດເມນເວັບໄຊທ໌ (dot com)",
+    text9:
+      "ໜ້າທຳອິດທີ່ພົບເຫັນ (ສ່ວນຫົວຂໍ້, ກ່ຽວກັບ, ຕິດຕໍ່ພົວພັນ, ແລະ 2 ພາກສ່ວນທີ່ທ່ານເລືອກ)",
+    text10:
+      "ໜ້າທຳອິດທີ່ພົບເຫັນ (ສ່ວນຫົວຂໍ້, ກ່ຽວກັບ, ຕິດຕໍ່ພົວພັນ, ແລະ 2 ພາກສ່ວນທີ່ທ່ານເລືອກ)ເວັບໄຊທ໌ທີ່ເຊື່ອມຕໍ່ຜູ້ໃຊ້ກັບທຸກສື່ສັງຄົມທີ່ມີຢູ່ຂອງທ່ານ.",
+    text11: "ຫຼັງຈາກປີທໍາອິດ: $100",
+    text12: "2.150.000 ກີບ",
+    text13: "3200ບາດ",
+    text14: "ລາຄາຕໍ່ປີລວມມີ:",
+    text15: "ບໍາລຸງຮັກສາເປັນປົກກະຕິ",
+    text16:
+      "ບໍາລຸງຮັກສາເປັນປົກກະຕິການ​ແກ້​ໄຂ​ບໍ່​ຈໍາ​ກັດ (ການ​ເພີ່ມ​ເຕີມ / ການ​ແກ້​ໄຂ​ໃນ​ພາກ​ສ່ວນ​ທີ່​ມີ​ຢູ່​ແລ້ວ​)",
+    text17: "ຮັກສາຊື່ໂດເມນຂອງທ່ານ (dot com)",
+    text18: "ນີ້ຈະເປັນຄ່າທໍານຽມປະຈໍາປີເພື່ອໃຫ້ແນ່ໃຈວ່າເວັບໄຊທ໌ຂອງທ່ານຄົງຢູ່.",
+  },
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   setLanguage("en");
 });
@@ -175,6 +227,11 @@ function setLanguage(lang) {
   document.querySelectorAll("[data-portfolio]").forEach((el) => {
     const portfolioKey = el.getAttribute("data-portfolio");
     el.textContent = portfolioTranslations[lang][portfolioKey] || portfolioKey;
+  });
+
+  document.querySelectorAll("[data-pricing]").forEach((el) => {
+    const pricingKey = el.getAttribute("data-pricing");
+    el.textContent = pricingTranslations[lang][pricingKey] || pricingKey;
   });
 
   document.querySelectorAll("[data-lang]").forEach((el) => {
