@@ -165,6 +165,46 @@ const pricingTranslations = {
   },
 };
 
+const faqTranslations = {
+  en: {
+    text1: "What is Chris’s mission?",
+    text2:
+      "He wants to help people and businesses proudly display what they offer and see them thrive.",
+    text3: "Can’t I use a website builder like Squarespace, Wix, Weebly, etc.?",
+    text4:
+      "Of course! However, these tools are limited and generic. If you want 100% customization, tell Chris what you want and he will get the job done for you.",
+    text5: "Can’t I just use AI?",
+    text6:
+      "Sure, AI is great! If you can make additions and maintain your site with it, it can be a helpful tool.",
+    text7: "Do I need to have a “dot com”?",
+    text8:
+      "No, but a 'dot com' domain is considered professional and widely used. If you want a site without a 'dot com', please contact Chris.",
+    text9:
+      "What if I want to add more sections, have multiple pages for my website or something more complex?",
+    text10:
+      "Accommodations can always be made. Please contact Chris to discuss the details.",
+  },
+  la: {
+    text1: "ພາລະກິດຂອງຄຣິສແມ່ນຫຍັງ?",
+    text2:
+      "ລາວຕ້ອງການຊ່ວຍໃຫ້ປະຊາຊົນແລະທຸລະກິດສະແດງຄວາມພູມໃຈໃນສິ່ງທີ່ພວກທ່ານສະເຫນີແລະເຫັນວ່າພວກທ່ານຈະເລີນເຕີບໂຕ.",
+    text3:
+      "ຂ້ອຍບໍ່ສາມາດໃຊ້ຕົວສ້າງເວັບໄຊທ໌ເຊັ່ນ Squarespace, Wix, Weebly, ແລະອື່ນໆບໍ?",
+    text4:
+      "ແນ່ນອນ! ຢ່າງໃດກໍຕາມ, ເຄື່ອງມືເຫຼົ່ານີ້ແມ່ນຈໍາກັດແລະທົ່ວໄປ. ຖ້າທ່ານຕ້ອງການການປັບແຕ່ງ 100%, ບອກ ຄຣິສ ສິ່ງທີ່ທ່ານຕ້ອງການແລະຄຣິສຈະໄດ້ຮັບວຽກເຮັດສໍາລັບທ່ານ.",
+    text5: "ຂ້ອຍພຽງແຕ່ໃຊ້ AI ບໍ່ໄດ້ບໍ?",
+    text6:
+      "ແນ່ນອນ, AI ແມ່ນດີຫຼາຍ! ຖ້າທ່ານສາມາດເຮັດໃຫ້ການເພີ່ມເຕີມແລະຮັກສາເວັບໄຊທ໌ຂອງທ່ານກັບມັນ, ມັນສາມາດເປັນເຄື່ອງມືທີ່ເປັນປະໂຫຍດ.",
+    text7: "ຂ້ອຍຈໍາເປັນຕ້ອງມີ 'dot com' ບໍ?",
+    text8:
+      "ບໍ່, ແຕ່ໂດເມນ 'dot com' ຖືກພິຈາລະນາເປັນມືອາຊີບແລະຖືກນໍາໃຊ້ຢ່າງກວ້າງຂວາງ ຖ້າທ່ານຕ້ອງການເວັບໄຊທ໌ທີ່ບໍ່ມີ 'dot com', ກະລຸນາຕິດຕໍ່ ຄຣິສ.",
+    text9:
+      "ຈະເປັນແນວໃດຖ້າຂ້ອຍຕ້ອງການເພີ້ມເຕີມພາກສ່ວນ ມີຫຼາຍຫນ້າສໍາລັບເວັບໄຊທ໌ຂອງຂ້ອຍຫຼືບາງສິ່ງບາງຢ່າງທີ່ສັບສົນຫຼາຍ?",
+    text10:
+      "ທີ່ພັກສາມາດເຮັດໄດ້ຕະຫຼອດເວລາ. ກະລຸນາຕິດຕໍ່ ຄຣິສເພື່ອປຶກສາຫາລືລາຍລະອຽດ.",
+  },
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   setLanguage("en");
 });
@@ -232,6 +272,11 @@ function setLanguage(lang) {
   document.querySelectorAll("[data-pricing]").forEach((el) => {
     const pricingKey = el.getAttribute("data-pricing");
     el.textContent = pricingTranslations[lang][pricingKey] || pricingKey;
+  });
+
+  document.querySelectorAll("[data-faq]").forEach((el) => {
+    const faqKey = el.getAttribute("data-faq");
+    el.textContent = faqTranslations[lang][faqKey] || faqKey;
   });
 
   document.querySelectorAll("[data-lang]").forEach((el) => {
