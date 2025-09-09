@@ -16,7 +16,8 @@ const aboutTranslations = {
   },
   la: {
     title: "ກ່ຽວກັບ",
-    text1: "ຄຣິສໄດ້ຖືກນໍາສະເໜີກ່ຽວກັບພື້ນຖານການຂຽນລະຫັດ (HTML ແລະ CSS) ໃນປີ 2011 ທີ່ມະຫາວິທະຍາໄລ Indiana, USA. ຫຼັງຈາກນັ້ນ, ລາວໄດ້ຮຽນຮູ້ການຂຽນໂປລແກລມແບບເຄື່ອນໄຫວແລະການພັດທະນາ backend ຈາກອາຈານຂອງລາວຢູ່ Tech Elevator. ຫຼັງຈາກນັ້ນ, ລາວໄດ້ສືບຕໍ່ສ້າງເວັບໄຊທ໌ທີ່ດຶງດູດສາຍຕາແລະເປັນຜູ້ ພັດທະນາກໍ່ສ້າງ Check4Tech, ເວັບໄຊທ໌ທີ່ເຊື່ອມຕໍ່ຜູ້ໃຊ້ກັບທຸກສື່ ສັງຄົມທີ່ມີຢູ່ຂອງລະບົບການຄຸ້ມຄອງສິນຄ້າໝັ້ນຄົງແລະສໍາຄັນຕໍ່ຜູ້ກູ້ໄພ."
+    text1:
+      "ຄຣິສໄດ້ຖືກນໍາສະເໜີກ່ຽວກັບພື້ນຖານການຂຽນລະຫັດ (HTML ແລະ CSS) ໃນປີ 2011 ທີ່ມະຫາວິທະຍາໄລ Indiana, USA. ຫຼັງຈາກນັ້ນ, ລາວໄດ້ຮຽນຮູ້ການຂຽນໂປລແກລມແບບເຄື່ອນໄຫວແລະການພັດທະນາ backend ຈາກອາຈານຂອງລາວຢູ່ Tech Elevator. ຫຼັງຈາກນັ້ນ, ລາວໄດ້ສືບຕໍ່ສ້າງເວັບໄຊທ໌ທີ່ດຶງດູດສາຍຕາແລະເປັນຜູ້ ພັດທະນາກໍ່ສ້າງ Check4Tech, ເວັບໄຊທ໌ທີ່ເຊື່ອມຕໍ່ຜູ້ໃຊ້ກັບທຸກສື່ ສັງຄົມທີ່ມີຢູ່ຂອງລະບົບການຄຸ້ມຄອງສິນຄ້າໝັ້ນຄົງແລະສໍາຄັນຕໍ່ຜູ້ກູ້ໄພ.",
   },
 };
 
@@ -47,7 +48,6 @@ const benefitTranslations = {
   },
 };
 
-
 const contactTranslations = {
   en: {
     title: "Contact",
@@ -62,6 +62,54 @@ const contactTranslations = {
     text2: "ອີເມວ:",
     text3: "ຂໍ້ຄວາມ:",
     text4: "ສົ່ງ",
+  },
+};
+
+const personalTranslations = {
+  en: {
+    title: "Personal",
+    text1:
+      "Share your skills, interests, hobbies, etc. with friends, family, and potential employers. Make a good impression. Market yourself and show what you can do!",
+  },
+  la: {
+    title: "ສ່ວນຕົວແລ້ວ",
+    text1:
+      "ມີການແບ່ງ​ປັນ​ຄວາມ​ສາ​ມາດ​ໃຫ້ແກ່ທ່ານຜູ້ໃດມີ ຄວາມ​ສົນ​ໃຈ​, ຢາກມີວຽກ​ເຮັດ​ງານ​ທໍາ​, ແລະ​ອື່ນໆ​ກັບ​ຫມູ່​ເພື່ອນ​, ຄອບ​ຄົວ​, ແລະ​ນາຍ​ຈ້າງ​ທີ່​ມີ​ຄວາມເຊຶ່ອຫມັ້ນແລະ ສ້າງຄວາມປະທັບໃຈທີ່ດີ. ໃກການຕະຫຼາດຂອງທ່ານເອງແລະສະແດງໃຫ້ເຫັນສິ່ງທີ່ທ່ານສາມາດເຮັດໄດ້!",
+  },
+};
+
+const businessTranslations = {
+  en: {
+    title: "Business",
+    text1:
+      "Showcase your business, product, or service. Provide plenty of details to draw in more customers and clients.",
+  },
+  la: {
+    title: "ທຸລະກິດ",
+    text1:
+      "ສະແດງທຸລະກິດ, ຜະລິດຕະພັນ, ຫຼືການບໍລິການຂອງທ່ານ. ໃຫ້ລາຍລະອຽດຫຼາຍຢ່າງເພື່ອດຶງດູດລູກຄ້າແລະລູກຄ້າຫຼາຍຂຶ້ນ.",
+  },
+};
+
+const artistTranslations = {
+  en: {
+    title: "Artist, artisan, musician, podcast, etc.",
+    text1:
+      "Send fans and those interested in your work to your site. Display a photo gallery or link to music and video streaming platforms.",
+  },
+  la: {
+    title: "ນັກສິລະປິນ, ຊ່າງຝີມື, ນັກດົນຕຣີ, ພອດແຄສ, ແລະອື່ນໆ",
+    text1:
+      "ສົ່ງແຟນໆ ແລະຜູ້ທີ່ສົນໃຈໃນວຽກຂອງທ່ານໄປຫາເວັບໄຊທ໌ຂອງທ່ານສະ​ແດງ​ຄັງ​ຮູບ​ພາບ​ຫຼື​ການ​ເຊື່ອມ​ຕໍ່​ກັບ​ດົນ​ຕີ​ແລະ​ວິ​ດີ​ໂອ​ເວ​ທີ​ການ​ນ​້​ໍ​າ​.",
+  },
+};
+
+const portfolioTranslations = {
+  en: {
+    title: "Portfolio",
+  },
+  la: {
+    title: "ຫຼັກຊັບ",
   },
 };
 
@@ -104,14 +152,29 @@ function setLanguage(lang) {
     el.textContent = benefitTranslations[lang][benefitKey] || benefitKey;
   });
 
-  // document.querySelectorAll("[data-vendors]").forEach((el) => {
-  //   const vendorsKey = el.getAttribute("data-vendors");
-  //   el.textContent = vendorsTranslations[lang][vendorsKey] || vendorsKey;
-  // });
+  document.querySelectorAll("[data-personal]").forEach((el) => {
+    const personalKey = el.getAttribute("data-personal");
+    el.textContent = personalTranslations[lang][personalKey] || personalKey;
+  });
+
+  document.querySelectorAll("[data-business]").forEach((el) => {
+    const businessKey = el.getAttribute("data-business");
+    el.textContent = businessTranslations[lang][businessKey] || businessKey;
+  });
 
   document.querySelectorAll("[data-contact]").forEach((el) => {
     const contactKey = el.getAttribute("data-contact");
     el.textContent = contactTranslations[lang][contactKey] || contactKey;
+  });
+
+  document.querySelectorAll("[data-artist]").forEach((el) => {
+    const artistKey = el.getAttribute("data-artist");
+    el.textContent = artistTranslations[lang][artistKey] || artistKey;
+  });
+
+  document.querySelectorAll("[data-portfolio]").forEach((el) => {
+    const portfolioKey = el.getAttribute("data-portfolio");
+    el.textContent = portfolioTranslations[lang][portfolioKey] || portfolioKey;
   });
 
   document.querySelectorAll("[data-lang]").forEach((el) => {

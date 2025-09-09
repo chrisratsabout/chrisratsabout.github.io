@@ -11,7 +11,7 @@
     <title>Chris Ratsabout</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/2025-logo.png" type="image/x-icon">
-     <script src="app.js" defer></script>
+    <script src="app.js" defer></script>
     <script src="https://kit.fontawesome.com/8efc22d7af.js" crossorigin="anonymous"></script>
 </head>
 
@@ -24,7 +24,7 @@
     <header>
         <section id="header-section">
             <img class="header-logo" src="images/2025-logo.png" alt="logo">
-                        <div class="lang-container">
+            <div class="lang-container">
                 <p data-lang="title">Language:</p>
                 <div class="menu-link">
                     <img onclick="setLanguage('en')" class="us-flag" src="images/eng.png" alt="eng">
@@ -111,8 +111,8 @@
                     <img src="images/girl.jpg" alt="keeps loudder handbags">
                 </div>
                 <div class="benefit-right">
-                    <h3>Personal</h3>
-                    <p class="benefit-desc">Share your skills, interests,
+                    <h3 data-personal="title">Personal</h3>
+                    <p class="benefit-desc" data-personal="text1">Share your skills, interests,
                         hobbies, etc. with friends, family, and potential employers. Make a good impression. Market
                         yourself and show what you can do!</p>
                     <p class="photo-credit">Photo credit: Oziel Gómez</p>
@@ -123,8 +123,9 @@
                     <img src="images/kl.jpg" alt="keeps loudder handbags">
                 </div>
                 <div class="benefit-right">
-                    <h3>Business</h3>
-                    <p class="benefit-desc">Showcase your business, product, or service. Provide plenty of details to
+                    <h3 data-business="title">Business</h3>
+                    <p class="benefit-desc" data-business="text1">Showcase your business, product, or service. Provide
+                        plenty of details to
                         draw in more customers
                         and clients.</p>
                     <p class="photo-credit">Photo credit: Keeps.Loudder
@@ -136,8 +137,9 @@
                     <img src="images/tom.jpg" alt="tomniscient">
                 </div>
                 <div class="benefit-right">
-                    <h3>Artist, artisan, musician, podcast, etc.</h3>
-                    <p class="benefit-desc">Send fans and those interested in your work to your site.
+                    <h3 data-artist="title">Artist, artisan, musician, podcast, etc.</h3>
+                    <p class="benefit-desc" data-artist="text1">Send fans and those interested in your work to your
+                        site.
                         Display a photo gallery or link to music and video streaming platforms.</p>
                     <p class="photo-credit">Photo credit: Alec Cheravitch
                         @millenni.al.shots</p>
@@ -151,7 +153,7 @@
     <!-- *                              *-->
     <!-- ********************************-->
     <section id="portfolio-section">
-        <h2>Portfolio</h2>
+        <h2 data-portfolio="title">Portfolio</h2>
         <div class="portfolio-container">
             <div class="portfolio-card">
                 <div> <img class="portfolio-main" src="images/clients/kl-card.jpg" alt="keeps loudder">
