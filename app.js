@@ -37,7 +37,7 @@ const facebookTranslations = {
     text1: "Facebook pages are limited and generic.",
   },
   la: {
-    text1: "ຫນ້າເຟສບຸກແມ່ນຈໍາກັດແລະທົ່ວໄປ.",
+    text1: "ຫນ້າເຟສບຸກແມ່ນຈໍາກັດ ແລະ ທົ່ວໄປ.",
   },
 };
 
