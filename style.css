@@ -244,6 +244,7 @@ body {
 #merch-section h2 {
   font-size: 4rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .promise {
@@ -377,6 +378,8 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  box-shadow: inset 0 2px 4px #0003, inset 0 6px 20px #00000030;
+  background-color: #e2e2e2;
 }
 
 #benefit-section h2 {
@@ -399,6 +402,7 @@ body {
   padding: 2rem;
   /* border-radius: 1rem; */
   box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030;
+  background-color: #f5f5f5;
 }
 
 .benefit-left {
@@ -435,6 +439,8 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
+  box-shadow: inset 0 2px 4px #0003, inset 0 6px 20px #00000030;
+  background-color: #e2e2e2;
 }
 
 .accordion {
@@ -643,6 +649,8 @@ body {
   justify-content: center;
   height: 100vh;
   padding: 2rem;
+  box-shadow: inset 0 2px 4px #0003, inset 0 6px 20px #00000030;
+  background-color: #e2e2e2;
 }
 
 #stories-section h2 {
