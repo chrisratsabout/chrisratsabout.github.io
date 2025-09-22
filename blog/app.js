@@ -101,14 +101,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
       article.innerHTML = `
         <img src="${item.src}" alt="${item.alt}" loading="lazy">
-        <div class="date-container">
-          <i class="fa-solid fa-calendar"></i>
           <p>${item.date}</p>
-        </div>
         <p>${item.text}</p>
       `;
       container.appendChild(article);
     });
+
+    rotateCards();
   }
 
   function parseDate(dateStr) {
@@ -158,4 +157,15 @@ document.addEventListener("DOMContentLoaded", function () {
   sortSelect.addEventListener("change", updatePosts);
   monthSelect.addEventListener("change", updatePosts);
   yearSelect.addEventListener("change", updatePosts);
+
+  function rotateCards() {
+    // Select all blog cards
+    const cards = document.querySelectorAll(".blog-card");
+
+    cards.forEach((card) => {
+      // Randomly pick -2, 0, or 2 degrees
+      const randomAngle = [-1, 0.5, 1][Math.floor(Math.random() * 3)];
+      card.style.transform = `rotate(${randomAngle}deg)`;
+    });
+  }
 });
