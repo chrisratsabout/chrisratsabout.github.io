@@ -527,6 +527,9 @@ body {
 
 #contact-section form input,
 #contact-section form textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 100%;
   padding: 1rem;
   border: none;
