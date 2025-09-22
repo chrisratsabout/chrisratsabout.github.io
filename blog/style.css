@@ -79,12 +79,6 @@ body {
   box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030;
 }
 
-.date-container {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-}
-
 @media (max-width: 768px) {
   .blog-card {
     flex: 1 1 100%;
