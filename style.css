@@ -545,7 +545,8 @@ body {
   gap: 10px;
 }
 
-#contact-section form button {
+#contact-section form button,
+.thank-you-wrapper a {
   appearance: none;
   -webkit-appearance: none; /* iOS Safari */
   -moz-appearance: none; /* Firefox */
@@ -562,6 +563,7 @@ body {
   transition: background-color 0.3s ease-in-out;
   width: 300px;
   display: block;
+  text-align: center;
 
   background-color: #fff; /* explicitly set background */
 }
@@ -707,6 +709,20 @@ body {
 
 .tech-logo-row img {
   width: 60px;
+}
+
+/* Thank You Styles */
+.thank-you-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.thank-you-wrapper img {
+  width: 30%;
 }
 
 /* Slogan Styles */
@@ -1145,6 +1161,11 @@ video {
 
   .stories-text-container {
     font-size: 1.4rem;
+  }
+
+  /* Thank You Styles */
+  .thank-you-wrapper img {
+    width: 100%;
   }
 
   /* Overview Mobile Styles */
