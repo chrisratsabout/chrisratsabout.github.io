@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Oxanium:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Oxanium:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, "Times New Roman", Times, serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #000;
+}
+
+.blog-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  background-color: #8c3030;
+  /* background-image: url("../blog/images/wood-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.blog-wrapper h1 {
+  font-size: 10rem;
+
+  background-image: linear-gradient(
+    to bottom,
+    #9f1d00,
+    #ffc1b3
+  ); /* Red to blue gradient */
+  -webkit-background-clip: text; /* For WebKit browsers like Chrome and Safari */
+  background-clip: text;
+  color: transparent;
+}
+
+h2 {
+  font-size: 12rem;
+  color: #ffc1b3;
+  font-style: italic;
+  font-family: Fleur De Leah, cursive, "Times New Roman", Times, serif;
+}
+
+/* .blog-wrapper p {
+  font-size: 2rem;
+} */
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.controls input,
+.controls select {
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+
+.blog-logo {
+  width: 20%;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.blog-card {
+  flex: 0 0 32%;
+  border-radius: 2rem;
+  background-color: #ffddd5;
+  color: #000;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.1rem !important;
+  align-items: start;
+  text-align: left;
+}
+
+.blog-card img {
+  width: 100%;
+  border-radius: 1.4rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.date-box {
+  display: flex;
+  gap: .5rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .blog-card {
+    flex: 1 1 100%;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+}
