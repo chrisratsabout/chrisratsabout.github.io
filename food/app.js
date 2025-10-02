@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       url: "https://maps.app.goo.gl/4adZHWZsKk9Y4ZKZ9",
       flag: "us",
       date: "August 22, 2024",
-      text: "Some interational snacks purchased at Jungle Jim's",
+      text: "Some international snacks purchased at Jungle Jim's",
     },
     {
       src: "images/230407-giordanos.webp",
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       src: "images/230318-la-nueva-ferreteria.webp",
-      alt: "La nueva ferreteria",
+      alt: "La nueva ferretería",
       location: "Ávila, Spain",
       flag: "sp",
       url: "https://maps.app.goo.gl/9CJGTtowZmEq2J9g6",
@@ -115,13 +115,15 @@ document.addEventListener("DOMContentLoaded", function () {
       article.className = "blog-card";
 
       article.innerHTML = `
-        <img src="${item.src}" alt="${item.alt}" loading="lazy" class="blog-image">
+<a href="${item.src}" target="_blank">        <img src="${item.src}" alt="${item.alt}" loading="lazy" class="blog-image"></a>
          <div class="date-box"><i class="fa-solid fa-link"></i>  <a href="${item.url}" target="_blank">${item.alt}</a></div>
-       <div class="date-box"> <i class="fa-solid fa-calendar"></i>  <p>${item.date}</p></div>
-   <div class="date-box">
-    <img src="images/${item.flag}.webp" alt="${item.location}" class="flag" />
-    <p>${item.location}</p>
+         <hr class="date-separator" />
+       <div class="date-country-box"> <div class="date-box"><i class="fa-solid fa-calendar"></i>  <p>${item.date}</p></div>
+
+<div class="date-box">    <img src="images/${item.flag}.webp" alt="${item.location}" class="flag" />
+    <p>${item.location}</p></div>
   </div>
+    <hr class="date-separator" />
         <p>${item.text}</p>
       `;
       container.appendChild(article);
