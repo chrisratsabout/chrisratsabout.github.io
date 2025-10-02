@@ -3,41 +3,46 @@ document.addEventListener("DOMContentLoaded", function () {
   const blogData = [
     {
       src: "images/240822-jungle-jims.webp",
-      alt: "jungle jim's",
+      alt: "Jungle Jim's",
       location: "Cincinnati, Ohio",
-      flag: "🇺🇸",
+      url: "https://maps.app.goo.gl/4adZHWZsKk9Y4ZKZ9",
+      flag: "us",
       date: "August 22, 2024",
       text: "Some interational snacks purchased at Jungle Jim's",
     },
     {
       src: "images/230407-giordanos.webp",
-      alt: "giordano's",
+      alt: "Giordano's",
       location: "Fort Wayne, Indiana",
-      flag: "🇺🇸",
+      flag: "us",
+      url: "https://maps.app.goo.gl/gUaSsSTbX9XwwPuK9",
       date: "April 7, 2023",
-      text: "Eating at Chicago-based pizza joint, Giordano's, in its grand opening week.",
+      text: "Eating at the Chicago-based pizza joint during its grand opening week.",
     },
     {
       src: "images/230322-mcdonalds.webp",
-      alt: "McDonald's Rome",
+      alt: "McDonald's",
       location: "Rome, Italy",
-      flag: "🇮🇹",
+      flag: "it",
+      url: "https://maps.app.goo.gl/myZcZ7EHbUxQeKu77",
       date: "March 22, 2023",
-      text: "Visiting the first McDonald's in Rome",
+      text: "Visiting the first McDonald's in Rome close to Piazza de Spagna.",
     },
     {
       src: "images/230321-jollibee.webp",
       alt: "Jollibee Vatican",
       location: "Rome, Italy",
-      flag: "🇮🇹",
+      flag: "it",
+      url: "https://maps.app.goo.gl/d8QjvdWEL9H9qYqd8",
       date: "March 21, 2023",
-      text: "Trying Jollibee for the first time - spaghetti, chicken, burger, etc.",
+      text: "Trying the Filipino chain for the first time - spaghetti, chicken, burger, etc.",
     },
     {
       src: "images/230320-vatican.webp",
       alt: "Vatican City",
       location: "Vatican City",
-      flag: "🇻🇦",
+      flag: "vc",
+      url: "https://maps.app.goo.gl/Q6cpQoabC7YnwQc67",
       date: "March 21, 2023",
       text: "Breakfast at the Vatican Museum - eggs, potatoes, bacon, meats, cheese, yogurt, waffles",
     },
@@ -45,23 +50,26 @@ document.addEventListener("DOMContentLoaded", function () {
       src: "images/230318-la-nueva-ferreteria.webp",
       alt: "La nueva ferreteria",
       location: "Ávila, Spain",
-      flag: "🇪🇸",
+      flag: "sp",
+      url: "https://maps.app.goo.gl/9CJGTtowZmEq2J9g6",
       date: "March 18, 2023",
-      text: "Breakfast at La nueva ferretería - cruasan, churros, tostada con tomate y café con leche",
+      text: "Breakfast - cruasan, churros, tostada con tomate y café con leche",
     },
     {
       src: "images/230318-fiorucci.webp",
-      alt: "Dinner at Fiorucci",
+      alt: "Fiorucci",
       location: "Collado Villalba, Madrid, Spain",
-      flag: "🇪🇸",
+      flag: "sp",
+      url: "https://maps.app.goo.gl/g4Sbu3YVjNW8FE2e9",
       date: "March 18, 2023",
       text: "Dinner at Fiorucci - hamburguesa mixta con patatas",
     },
     {
       src: "images/230317-la-gran-muralla.webp",
-      alt: "Dinner at La gran muralla",
+      alt: "Restaurante Grandeza Oriental",
       location: "Collado Villalba, Madrid, Spain",
-      flag: "🇪🇸",
+      flag: "sp",
+      url: "https://maps.app.goo.gl/cpYAtrZ5BFYZkWcu6",
       date: "March 17, 2023",
       text: "Dinner at La gran muralla - ",
     },
@@ -69,7 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
       src: "images/230317-carrefour.webp",
       alt: "Watermelon Fanta at Carrefour",
       location: "Collado Villalba, Madrid, Spain",
-      flag: "🇪🇸",
+      flag: "sp",
+      url: "https://maps.app.goo.gl/sT6V2pXW6imCFtFCA",
       date: "March 17, 2023",
       text: "Watermelon Fanta from Carrefour ",
     },
@@ -77,15 +86,17 @@ document.addEventListener("DOMContentLoaded", function () {
       src: "images/230316-fiorucci.webp",
       alt: "Breakfast at Fiorucci",
       location: "Collado Villalba, Madrid, Spain",
-      flag: "🇪🇸",
+      flag: "sp",
+      url: "https://maps.app.goo.gl/g4Sbu3YVjNW8FE2e9",
       date: "March 16, 2023",
       text: "First breakfast at Fiorucci. ¡Lo mejor!",
     },
     {
       src: "images/230315-iberia.webp",
-      alt: "Iberia flight dinner",
+      alt: "Iberia Flight",
       location: "Chicago - Madrid",
-      flag: "🇺🇸 🇪🇸",
+      flag: "sp",
+      url: "#",
       date: "March 15, 2023",
       text: "Curry dinner on Iberia flight to Madrid",
     },
@@ -104,9 +115,13 @@ document.addEventListener("DOMContentLoaded", function () {
       article.className = "blog-card";
 
       article.innerHTML = `
-        <img src="${item.src}" alt="${item.alt}" loading="lazy">
+        <img src="${item.src}" alt="${item.alt}" loading="lazy" class="blog-image">
+         <div class="date-box"><i class="fa-solid fa-link"></i>  <a href="${item.url}" target="_blank">${item.alt}</a></div>
        <div class="date-box"> <i class="fa-solid fa-calendar"></i>  <p>${item.date}</p></div>
-            <p>${item.flag}${" "}${item.location}</p>
+   <div class="date-box">
+    <img src="images/${item.flag}.webp" alt="${item.location}" class="flag" />
+    <p>${item.location}</p>
+  </div>
         <p>${item.text}</p>
       `;
       container.appendChild(article);
@@ -129,7 +144,9 @@ document.addEventListener("DOMContentLoaded", function () {
       // text filter
       const matchesText =
         item.text.toLowerCase().includes(query) ||
-        item.alt.toLowerCase().includes(query);
+        item.alt.toLowerCase().includes(query) ||
+        item.location.toLowerCase().includes(query) ||
+        item.date.toLowerCase().includes(query);
 
       // month filter
       const matchesMonth =
