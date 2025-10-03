@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       src: "images/230322-mcdonalds.webp",
-      alt: "McDonald's",
+      alt: "McDonald's Roma",
       location: "Rome, Italy",
       flag: "it",
       url: "https://maps.app.goo.gl/myZcZ7EHbUxQeKu77",
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       src: "images/230320-vatican.webp",
       alt: "Vatican City",
-      location: "Vatican City",
+      location: "Vatican Museums",
       flag: "vc",
       url: "https://maps.app.goo.gl/Q6cpQoabC7YnwQc67",
       date: "March 21, 2023",
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       src: "images/230317-carrefour.webp",
-      alt: "Watermelon Fanta at Carrefour",
+      alt: "Carrefour",
       location: "Collado Villalba, Spain",
       flag: "sp",
       url: "https://maps.app.goo.gl/sT6V2pXW6imCFtFCA",
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       src: "images/230316-fiorucci.webp",
-      alt: "Breakfast at Fiorucci",
+      alt: "Fiorucci",
       location: "Collado Villalba, Spain",
       flag: "sp",
       url: "https://maps.app.goo.gl/g4Sbu3YVjNW8FE2e9",
@@ -128,20 +128,11 @@ document.addEventListener("DOMContentLoaded", function () {
       text: "Taste testing different sodas throughout the world.",
     },
     {
-      src: "images/210529-world-of-coca-cola.webp",
+      src: "images/210528-atlanta-breakfast-club.webp",
       alt: "Atlanta Breakfast Club",
       location: "Atlanta, Georgia",
       flag: "us",
       url: "https://maps.app.goo.gl/VKprzR9nrG3bkxQNA",
-      date: "May 28, 2021",
-      text: "Peach cobbler French toast...",
-    },
-    {
-      src: "images/210529-world-of-coca-cola.webp",
-      alt: "Atlanta Breakfast Club",
-      location: "Atlanta, Georgia",
-      flag: "us",
-      url: "#",
       date: "May 28, 2021",
       text: "Peach cobbler French toast...",
     },
