@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       url: "https://maps.app.goo.gl/4adZHWZsKk9Y4ZKZ9",
       flag: "us",
       date: "August 22, 2024",
-      text: "Some international snacks purchased at Jungle Jim's",
+      text: "Some international snacks purchased at Jungle Jim's Eastgate location",
     },
     {
       src: "images/230407-giordanos.webp",
@@ -35,12 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
       flag: "it",
       url: "https://maps.app.goo.gl/d8QjvdWEL9H9qYqd8",
       date: "March 21, 2023",
-      text: "Trying the Filipino chain for the first time - spaghetti, chicken, burger, etc.",
+      text: "Trying the Filipino chain for the first time. Had to order everything while I had the chance - spaghetti, chicken, burger, etc.",
     },
     {
       src: "images/230320-vatican.webp",
-      alt: "Vatican City",
-      location: "Vatican Museums",
+      alt: "Vatican Museums",
+      location: "Vatican City",
       flag: "vc",
       url: "https://maps.app.goo.gl/Q6cpQoabC7YnwQc67",
       date: "March 21, 2023",
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
       flag: "sp",
       url: "https://maps.app.goo.gl/9CJGTtowZmEq2J9g6",
       date: "March 18, 2023",
-      text: "Breakfast - cruasan, churros, tostada con tomate y café con leche",
+      text: "Great prices and food - cruasán, churros, tostada con tomate, Cola Cao y café con leche",
     },
     {
       src: "images/230318-fiorucci.webp",
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
       flag: "sp",
       url: "https://maps.app.goo.gl/g4Sbu3YVjNW8FE2e9",
       date: "March 18, 2023",
-      text: "Dinner at Fiorucci - hamburguesa mixta con patatas",
+      text: "Dinner after a long day in Ávila. Back to my favorite spot - hamburguesa mixta con patatas",
     },
     {
       src: "images/230317-la-gran-muralla.webp",
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
       flag: "sp",
       url: "https://maps.app.goo.gl/cpYAtrZ5BFYZkWcu6",
       date: "March 17, 2023",
-      text: "Dinner at La gran muralla - ",
+      text: "Okay food but cool caves vibes.",
     },
     {
       src: "images/230317-carrefour.webp",
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
       flag: "sp",
       url: "https://maps.app.goo.gl/g4Sbu3YVjNW8FE2e9",
       date: "March 16, 2023",
-      text: "First breakfast at Fiorucci. ¡Lo mejor!",
+      text: "First breakfast at Fiorucci. Super friendly ladies working there. ¡Lo mejor!",
     },
     {
       src: "images/230315-iberia.webp",
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
       flag: "sp",
       url: "https://maps.app.goo.gl/oypH7XceZ8afts6T9",
       date: "November 6, 2021",
-      text: "First meal in Madrid and oldest restaurant in the world, 1725.",
+      text: "First meal in Madrid and oldest restaurant in the world, opened 1725.",
     },
     {
       src: "images/210529-world-of-coca-cola.webp",
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
       flag: "us",
       url: "https://maps.app.goo.gl/VKprzR9nrG3bkxQNA",
       date: "May 28, 2021",
-      text: "Peach cobbler French toast...",
+      text: "Peach cobbler French toast. A week's worth of sugar in one meal.",
     },
         {
       src: "images/131123-the-great-dane.webp",
