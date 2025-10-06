@@ -23,12 +23,16 @@ const aboutTranslations = {
   en: {
     title: "About",
     text1:
-      "Chris was introduced to the basics of coding (HTML and CSS) in 2011 at Indiana University. Later on, he learned dynamic programming and backend development from his teacher at Tech Elevator. Afterwards, he went on to create visually appealing websites and became the lead software developer at Check4Tech, an inventory management system for first responders.",
+      "Chris was introduced to the basics of coding (HTML and CSS) in 2011 at Indiana University.",
+      text2: "Later on, he learned dynamic programming and backend development from his teacher at Tech Elevator.",
+      text3: "Afterwards, he went on to create visually appealing websites and became the lead software developer at Check4Tech, an inventory management system for first responders."
   },
   la: {
     title: "ກ່ຽວກັບ",
     text1:
-      "ຄຣິສໄດ້ເລີ່ມຮຽນຮູ້ພື້ນຖານກ່ຽວກັບການຂຽນໂຄ້ດ (HTML ແລະ CSS) ໃນປີ 2011 ທີ່ມະຫາວິທະຍາໄລ Indiana, USA. ຕໍ່ມາ, ລາວໄດ້ຮຽນຮູ້ການຂຽນໂປລແກຣມແບບເຄື່ອນໄຫວ ແລະ ການພັດທະນາ ລະບົບຫລັງບ້ານ (backend development) ຈາກອາຈານສອນຢູ່ Tech Elevator. ຫຼັງຈາກນັ້ນ, ລາວໄດ້ສືບຕໍ່ສ້າງເວັບໄຊທ໌ທີ່ຫນ້າສົນໃຈ ແລະ ກາຍເປັນ ຜູ້ພັດທະນາໂປຣແກມ ທີ່ບໍລິສັດ Check4Tech, ເຊິ່ງເປັນລະບົບຈັດການລາຍການສິນຄ້າສໍາລັບຫນ່ວຍກູ້ໄພ.",
+      "ຄຣິສໄດ້ເລີ່ມຮຽນຮູ້ພື້ນຖານກ່ຽວກັບການຂຽນໂຄ້ດ (HTML ແລະ CSS) ໃນປີ 2011 ທີ່ມະຫາວິທະຍາໄລ Indiana, USA.",
+      text2: "ຕໍ່ມາ, ລາວໄດ້ຮຽນຮູ້ການຂຽນໂປລແກຣມແບບເຄື່ອນໄຫວ ແລະ ການພັດທະນາ ລະບົບຫລັງບ້ານ (backend development) ຈາກອາຈານສອນຢູ່ Tech Elevator. ",
+      text3: "ຫຼັງຈາກນັ້ນ, ລາວໄດ້ສືບຕໍ່ສ້າງເວັບໄຊທ໌ທີ່ຫນ້າສົນໃຈ ແລະ ກາຍເປັນ ຜູ້ພັດທະນາໂປຣແກມ ທີ່ບໍລິສັດ Check4Tech, ເຊິ່ງເປັນລະບົບຈັດການລາຍການສິນຄ້າສໍາລັບຫນ່ວຍກູ້ໄພ."
   },
 };
 
