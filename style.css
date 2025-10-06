@@ -290,6 +290,7 @@ flex: 1 1 40%;
 .portfolio-card img {
   margin-top: 1rem;
   width: 100%;
+  object-fit: cover;
 }
 
 .portfolio-card div {
@@ -320,12 +321,6 @@ flex: 1 1 40%;
 
 .portfolio-sub-logo {
   width: 300px;
-}
-
-.category-box {
-  background-color: rgb(80, 194, 249);
-  color: #fff;
-  padding: .3rem .8rem;
 }
 
 /* Merch Styles */
