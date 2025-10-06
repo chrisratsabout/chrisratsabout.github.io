@@ -201,11 +201,35 @@ body {
   /* border: 1px solid red; */
 }
 
-.stories-container.right img {
-  width: 100%;
-  border-radius: 1rem;
+@keyframes transformImage {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.stories-container.right {
+  overflow: hidden;
+    border-radius: 1rem;
   box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030;
 }
+
+.stories-container.right img {
+  width: 100%;
+  animation: transformImage 20s linear infinite alternate;
+}
+
 
 .stories-container.left {
   display: flex;
