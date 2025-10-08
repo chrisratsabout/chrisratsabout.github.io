@@ -1,3 +1,15 @@
+function changeHamburgerBackground() {
+  const navBar = document.querySelector(".navbar");
+  let scrollValue = window.scrollY;
+  if (scrollValue > 100) {
+    navBar.style.boxShadow = "0 2px 4px #0003, 0 6px 20px #00000030";
+  } else {
+    navBar.style.boxShadow = "none";
+  }
+}
+window.addEventListener("scroll", changeHamburgerBackground);
+
+
 //TRANSLATIONS
 const headerTranslations = {
   en: {
@@ -324,4 +336,20 @@ const fadeInObserver = new IntersectionObserver(
 
 fadeIn.forEach((fade) => {
   fadeInObserver.observe(fade);
+});
+
+const navMenu = document.querySelector(".nav-menu");
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelectorAll(".nav-menu a");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+  hamburger.classList.toggle("active");
+});
+
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+    hamburger.classList.remove("active");
+  });
 });
