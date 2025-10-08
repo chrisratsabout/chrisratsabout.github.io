@@ -158,21 +158,20 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
 .header-row {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.header-row-left,
-.header-row-right {
-  flex: 1 1 50%;
+.header-row-left {
+  flex: 1 1 100%;
   padding: 2rem;
   height: 100%;
   display: flex;
@@ -182,6 +181,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   gap: 1rem;
   position: relative;
@@ -192,12 +192,13 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300%;
+  width: 100%;
   opacity: 0.7;
+  overflow: hidden;
 }
 
 .gradient-layer img {
-  width: 100%;
+  width: 500%;
 }
 
 .text-layer {
@@ -207,8 +208,7 @@ a {
   gap: 1rem;
   z-index: 5;
 }
-
-.text-layer button {
+.header-row-left button {
   width: 30%;
   padding: 1rem;
   margin: 2rem auto;
@@ -225,6 +225,7 @@ a {
 }
 
 .header-row-left h1 {
+  margin-top: 6rem;
   font-size: 3rem;
 }
 
@@ -233,29 +234,30 @@ a {
   font-style: italic;
 }
 
-.header-row-right {
+/* .header-row-right {
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .header-row-right-div {
   position: relative;
-  width: 100%;
-  height: 400px; /* or whatever size you need */
+  width: 80%;
+  height: 500px; /* or whatever size you need */
   overflow: hidden;
   border-radius: 1rem;
 }
 
 .header-row-right-div img {
   position: absolute;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: contain;
   opacity: 0;
-  animation: fadeSlideshow 18s infinite;
+  animation: fadeSlideshow 12s infinite;
   border-radius: 1rem;
 }
 
@@ -264,11 +266,11 @@ a {
 }
 
 .header-row-right-div img:nth-child(2) {
-  animation-delay: 6s;
+  animation-delay: 4s;
 }
 
 .header-row-right-div img:nth-child(3) {
-  animation-delay: 12s;
+  animation-delay: 8s;
 }
 
 @keyframes fadeSlideshow {
@@ -350,16 +352,23 @@ a {
     height: 100%;
   }
 
+  .text-layer {
+    width: 100%;
+  }
+
+  .header-row-left h1 {
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+
   .header-row {
+    width: 100%;
     margin-top: 4rem;
     flex-direction: column-reverse;
   }
 
-  .header-row-left,
-  .header-row-right {
+  .header-row-left {
     width: 100%;
-    flex: 1 1 100%;
-    height: 100%;
   }
 
   .gradient-layer {
@@ -378,14 +387,22 @@ a {
 
   .header-row-right-div {
     padding: 0;
+    height: 220px;
+    width: 100%;
+  }
+
+  .header-row-right-div img {
+    width: 100%;
+ object-position:top ;
+ object-fit: cover;
   }
 
   .header-row-left {
     padding: 0 1rem;
   }
 
-  .text-layer button {
-  width: 80%;;
+  .header-row-left button {
+  width: 100% !important;
 }
 }
 

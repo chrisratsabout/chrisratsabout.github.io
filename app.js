@@ -1,7 +1,7 @@
 function changeHamburgerBackground() {
   const navBar = document.querySelector(".navbar");
   let scrollValue = window.scrollY;
-  if (scrollValue > 100) {
+  if (scrollValue > 50) {
     navBar.style.boxShadow = "0 2px 4px #0003, 0 6px 20px #00000030";
   } else {
     navBar.style.boxShadow = "none";
