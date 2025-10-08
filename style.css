@@ -37,7 +37,7 @@ a {
 
 .navbar {
   /* color of nav bar */
-  background-color: rgb(255, 255,255);
+  background-color: transparent;
   position: fixed;
   top: 0;
   left: 0;
@@ -160,6 +160,10 @@ a {
   justify-content: start;
   height: 100%;
   width: 100%;
+  background-image: url("images/header-bkgd.webp");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
 }
 
 .header-row {
@@ -244,8 +248,8 @@ a {
 
 .header-row-right-div {
   position: relative;
-  width: 80%;
-  height: 500px; /* or whatever size you need */
+  width: 100%;
+  height: 600px; /* or whatever size you need */
   overflow: hidden;
   border-radius: 1rem;
 }
@@ -256,9 +260,11 @@ a {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  object-position: top;
   opacity: 0;
   animation: fadeSlideshow 12s infinite;
   border-radius: 1rem;
+  /* border: 1px solid red; */
 }
 
 .header-row-right-div img:nth-child(1) {

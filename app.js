@@ -3,8 +3,10 @@ function changeHamburgerBackground() {
   let scrollValue = window.scrollY;
   if (scrollValue > 50) {
     navBar.style.boxShadow = "0 2px 4px #0003, 0 6px 20px #00000030";
+        navBar.style.backgroundColor = "white";
   } else {
     navBar.style.boxShadow = "none";
+    navBar.style.backgroundColor = "transparent";
   }
 }
 window.addEventListener("scroll", changeHamburgerBackground);
