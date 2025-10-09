@@ -25,7 +25,7 @@ section {
   font-family: Phetsarath, sans-serif;
 }
 
-li {
+.navbar li {
   list-style: none;
 }
 
@@ -33,6 +33,7 @@ a {
   /* color of links */
   color: #000000;
   text-decoration: none;
+  transition: color .3s ease-in-out;
 }
 
 .navbar {
@@ -76,7 +77,7 @@ a {
 }
 
 .nav-link:hover {
-  color: var(--main-color);
+  color: rgb(80, 194, 249);
 }
 
 .hamburger {
@@ -601,7 +602,7 @@ hr {
 }
 
 /* Merch Styles */
-#merch-section {
+#pricing-section {
   height: 100%;
   padding: 2rem;
   display: flex;
@@ -612,7 +613,7 @@ hr {
   background-color: #ececec;
 }
 
-#merch-section h2 {
+#pricing-section h2 {
   font-size: 4rem;
   margin-bottom: 20px;
   text-align: center;
@@ -625,7 +626,7 @@ hr {
   text-align: center;
 }
 
-.merch-card-container {
+.pricing-card-container {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -633,8 +634,8 @@ hr {
   width: 70%;
 }
 
-.merch-card {
-  flex-basis: 50%;
+.pricing-card {
+  flex-basis: 100%;
   /* border-radius: 1rem; */
   /* box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030; */
   padding: 1rem;
@@ -646,33 +647,35 @@ hr {
   border-radius: 1rem;
 }
 
-.merch-card i {
-  font-size: 5rem;
+.pricing-card i {
+  font-size: 3rem;
   margin: 2rem;
 }
 
-.merch-card ul {
+.pricing-card ul {
   display: table;
   padding-left: 1rem;
   margin: 0 auto;
   font-size: 1.3rem;
 }
 
-.merch-card ul li {
+.pricing-card ul li {
   margin: 1rem 0;
 }
 
-.merch-card.year-one {
+.pricing-card.year-one {
+  width: 100%;
   background-color: rgb(80, 194, 249);
   color: #000;
 }
 
-.merch-card.post-year-one {
+.pricing-card.post-year-one {
   background-color: #cacaca;
   color: #4b4b4b;
 }
 
-.merch-card h3 {
+.pricing-card h3 {
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -1118,21 +1121,21 @@ hr {
 
   /* Merch Mobile Styles */
 
-  #merch-section {
+  #pricing-section {
     height: 100%;
-    padding: 1rem;
+    padding: 2rem 1rem;
   }
 
-  .merch-card-container {
+  .pricing-card-container {
     flex-wrap: wrap;
     width: 100%;
   }
 
-  .merch-card {
+  .pricing-card {
     flex-basis: 100%;
   }
 
-  .merch-title {
+  .pricing-title {
     width: 70%;
   }
 

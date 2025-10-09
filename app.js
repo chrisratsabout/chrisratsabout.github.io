@@ -147,7 +147,7 @@ const pricingTranslations = {
     title: "Start Pricing",
     text1:
       "Chris promises an affordable and easy-to-use website that loads fast and displays properly on all devices. He strives to meet all his clients' needs in a timely manner and promptly respond to their questions and requests.",
-    text2: "First Year: $120",
+    text2: "Yearly: $120",
     text3: "2.500.000 LAK",
     text4: "4000 THB",
     text5: "Price Includes:",
@@ -171,7 +171,7 @@ const pricingTranslations = {
     title: "ລາຄາ",
     text1:
       "ຄຣິສ ສັນຍາວ່າຈະສ້າງເວັບໄຊທ໌ທີ່ມີລາຄາບໍ່ແພງ ແລະ ໃຊ້ງານງ່າຍ, ໂຫລດໄວ ແລະ ນໍາສະເຫນີຜົນງານຢ່າງສວຍງາມໃນທຸກອຸປະກອນ. ລາວພະຍາຍາມຢ່າງເຕັມທີ່ເພື່ອໃຫ້ໄດ້ຕາມຄວາມຕ້ອງການຂອງລູກຄ້າຕາມເວລາທີ່ກໍານົດ, ຕອບຄໍາຖາມ ແລະ ຂໍ້ສົງໄສຂອງລູກຄ້າໄດ້ຢ່າງວ່ອງໄວ.",
-    text2: "ປີທໍາອິດ: $120",
+    text2: "ທຸກໆປີ: $120",
     text3: "2.500.000 ກີບ",
     text4: "4000 ບາດ",
     text5: "ລາຄານີ້ລວມມີ:",
