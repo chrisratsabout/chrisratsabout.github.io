@@ -144,7 +144,7 @@ const portfolioTranslations = {
 
 const pricingTranslations = {
   en: {
-    title: "Start Pricing",
+    title: "Pricing",
     text1:
       "Chris promises an affordable and easy-to-use website that loads fast and displays properly on all devices. He strives to meet all his clients' needs in a timely manner and promptly respond to their questions and requests.",
     text2: "Yearly: $120",

@@ -33,7 +33,7 @@ a {
   /* color of links */
   color: #000000;
   text-decoration: none;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .navbar {
@@ -51,7 +51,7 @@ a {
   padding: 0 24px;
   z-index: 10;
   height: 70px;
-  transition: box-shadow .3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .nav-logo {
@@ -281,13 +281,22 @@ a {
 }
 
 @keyframes fadeSlideshow {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  33% { opacity: 1; }
-  43% { opacity: 0; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  43% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-
 
 @keyframes animate {
   0% {
@@ -400,8 +409,8 @@ a {
 
   .header-row-right-div img {
     width: 100%;
- object-position:top ;
- object-fit: cover;
+    object-position: top;
+    object-fit: cover;
   }
 
   .header-row-left {
@@ -409,12 +418,12 @@ a {
   }
 
   .header-row-left button {
-  width: 100% !important;
-}
+    width: 100% !important;
+  }
 }
 
 /* About Styles */
-#stories-section {
+#about-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -424,7 +433,7 @@ a {
   background-color: #ececec;
 }
 
-#stories-section h2 {
+#about-section h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
@@ -475,12 +484,12 @@ a {
 }
 
 .stories-container.right img {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;          
+  object-fit: cover;
   transform-origin: center center;
   animation: transformImage 20s linear infinite alternate;
 }
@@ -511,7 +520,7 @@ hr {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 3rem;
   align-items: center;
   gap: 1rem;
 }
@@ -637,7 +646,6 @@ hr {
 .pricing-card {
   flex-basis: 100%;
   /* border-radius: 1rem; */
-  /* box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030; */
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -645,6 +653,7 @@ hr {
   align-items: center;
   font-size: 1.9rem;
   border-radius: 1rem;
+  background-color: rgb(80, 194, 249);
 }
 
 .pricing-card i {
@@ -665,7 +674,6 @@ hr {
 
 .pricing-card.year-one {
   width: 100%;
-  background-color: rgb(80, 194, 249);
   color: #000;
 }
 
@@ -679,12 +687,8 @@ hr {
   text-align: center;
 }
 
-.section-addition {
-  color: rgb(0, 135, 31);
-}
-
-.note {
-  color: red;
+.ul-container {
+  display: flex;
 }
 
 /* Overview Styles */
@@ -1118,7 +1122,6 @@ hr {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-
   /* Merch Mobile Styles */
 
   #pricing-section {
@@ -1140,7 +1143,7 @@ hr {
   }
 
   /* Stories Mobile Styles */
-  #stories-section {
+  #about-section {
     padding: 2rem 0rem;
   }
 
@@ -1179,7 +1182,7 @@ hr {
     width: 100%;
     margin-top: 2rem;
   }
-  
+
   .tech-logo-row {
     display: flex;
     flex-wrap: wrap;
@@ -1191,6 +1194,11 @@ hr {
 
   .tech-logo-row img {
     width: 50px;
+  }
+
+  .ul-container {
+    flex-direction: column;
+    gap: 0;
   }
 
   /* Benefits Mobile Styles */
@@ -1228,11 +1236,11 @@ hr {
 
   /* Stories Mobile Styles */
 
-  #stories-section {
+  #about-section {
     height: 100%;
   }
 
-  #stories-section h2 {
+  #about-section h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 20px;
