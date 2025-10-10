@@ -3,7 +3,7 @@ function changeHamburgerBackground() {
   let scrollValue = window.scrollY;
   if (scrollValue > 50) {
     navBar.style.boxShadow = "0 2px 4px #0003, 0 6px 20px #00000030";
-        navBar.style.backgroundColor = "white";
+    navBar.style.backgroundColor = "white";
   } else {
     navBar.style.boxShadow = "none";
     navBar.style.backgroundColor = "transparent";
@@ -11,8 +11,26 @@ function changeHamburgerBackground() {
 }
 window.addEventListener("scroll", changeHamburgerBackground);
 
-
 //TRANSLATIONS
+const navbarTranslations = {
+  en: {
+    name: "Chris Ratsabout",
+    text1: "Home",
+    text2: "About",
+    text3: "Portfolio",
+    text4: "Pricing",
+    text5: "Contact",
+  },
+  la: {
+    name: "ຄຣິສ ຣາດສາບຸຊ",
+    text1: "Home",
+    text2: "ກ່ຽວກັບ",
+    text3: "ຫຜົນງານ",
+    text4: "ລາຄາ",
+    text5: "ຕິດຕໍ່",
+  },
+};
+
 const headerTranslations = {
   en: {
     title: "Chris Ratsabout",
@@ -38,15 +56,19 @@ const aboutTranslations = {
     title: "About",
     text1:
       "Chris was introduced to the basics of coding (HTML and CSS) in 2011 at Indiana University.",
-      text2: "Later on, he learned dynamic programming and backend development from his teacher at Tech Elevator.",
-      text3: "Afterwards, he went on to create visually appealing websites and became the lead software developer at Check4Tech, an inventory management system for first responders."
+    text2:
+      "Later on, he learned dynamic programming and backend development from his teacher at Tech Elevator.",
+    text3:
+      "Afterwards, he went on to create visually appealing websites and became the lead software developer at Check4Tech, an inventory management system for first responders.",
   },
   la: {
     title: "ກ່ຽວກັບ",
     text1:
       "ຄຣິສໄດ້ເລີ່ມຮຽນຮູ້ພື້ນຖານກ່ຽວກັບການຂຽນໂຄ້ດ (HTML ແລະ CSS) ໃນປີ 2011 ທີ່ມະຫາວິທະຍາໄລ Indiana, USA.",
-      text2: "ຕໍ່ມາ, ລາວໄດ້ຮຽນຮູ້ການຂຽນໂປລແກຣມແບບເຄື່ອນໄຫວ ແລະ ການພັດທະນາ ລະບົບຫລັງບ້ານ (backend development) ຈາກອາຈານສອນຢູ່ Tech Elevator. ",
-      text3: "ຫຼັງຈາກນັ້ນ, ລາວໄດ້ສືບຕໍ່ສ້າງເວັບໄຊທ໌ທີ່ຫນ້າສົນໃຈ ແລະ ກາຍເປັນ ຜູ້ພັດທະນາໂປຣແກມ ທີ່ບໍລິສັດ Check4Tech, ເຊິ່ງເປັນລະບົບຈັດການລາຍການສິນຄ້າສໍາລັບຫນ່ວຍກູ້ໄພ."
+    text2:
+      "ຕໍ່ມາ, ລາວໄດ້ຮຽນຮູ້ການຂຽນໂປລແກຣມແບບເຄື່ອນໄຫວ ແລະ ການພັດທະນາ ລະບົບຫລັງບ້ານ (backend development) ຈາກອາຈານສອນຢູ່ Tech Elevator. ",
+    text3:
+      "ຫຼັງຈາກນັ້ນ, ລາວໄດ້ສືບຕໍ່ສ້າງເວັບໄຊທ໌ທີ່ຫນ້າສົນໃຈ ແລະ ກາຍເປັນ ຜູ້ພັດທະນາໂປຣແກມ ທີ່ບໍລິສັດ Check4Tech, ເຊິ່ງເປັນລະບົບຈັດການລາຍການສິນຄ້າສໍາລັບຫນ່ວຍກູ້ໄພ.",
   },
 };
 
@@ -180,8 +202,7 @@ const pricingTranslations = {
     text8: "ຊື່ໂດເມນເວັບໄຊທ໌ (dot com)",
     text9:
       "ໜ້າຫລັກຫນຶ່ງຫນ້າ (ສ່ວນຫົວຂໍ້, ກ່ຽວກັບ, ຕິດຕໍ່ພົວພັນ, ແລະ 2 ພາກສ່ວນທີ່ທ່ານຕ້ອງການ)",
-    text10:
-      "ເວັບໄຊທ໌ທີ່ລິ້ງກັບທຸກສື່ສັງຄົມອອນລາຍຂອງທ່ານທີ່ມີຢູ່ແລ້ວ.",
+    text10: "ເວັບໄຊທ໌ທີ່ລິ້ງກັບທຸກສື່ສັງຄົມອອນລາຍຂອງທ່ານທີ່ມີຢູ່ແລ້ວ.",
     text11: "ຫຼັງຈາກປີທໍາອິດ: $100",
     text12: "2.150.000 ກີບ",
     text13: "3200ບາດ",
@@ -190,7 +211,8 @@ const pricingTranslations = {
     text16:
       "ການ​ແກ້​ໄຂຂໍ້ມູນແບບ​ບໍ່​ຈໍາ​ກັດ (ການ​ເພີ່ມ​ / ດັດ​ແກ້​​ໃນ​ພາກ​ສ່ວນ​ທີ່​ມີ​ຢູ່​ແລ້ວ​)",
     text17: "ຮັກສາຊື່ໂດເມນ (dot com)",
-    text18: "ຫມາຍເຫດ: ນີ້ຈະເປັນຄ່າບໍລິການລາຍປີເພື່ອໃຫ້ແນ່ໃຈວ່າເວັບໄຊທ໌ຂອງທ່ານຍັງຄົງອັບເດດຢູ່.",
+    text18:
+      "ຫມາຍເຫດ: ນີ້ຈະເປັນຄ່າບໍລິການລາຍປີເພື່ອໃຫ້ແນ່ໃຈວ່າເວັບໄຊທ໌ຂອງທ່ານຍັງຄົງອັບເດດຢູ່.",
   },
 };
 
@@ -229,8 +251,7 @@ const faqTranslations = {
       "ບໍ່ຈໍາເປັນ, ແຕ່ໂດເມນ 'dot com' ຖືວ່າມີຄວາມເປັນມືອາຊີບ ແລະ ເປັນມາດຕະຖານຖືກນໍາໃຊ້ທົ່ວໄປ. ຖ້າທ່ານຕ້ອງການເວັບໄຊທ໌ທີ່ບໍ່ມີ 'dot com', ຕິດຕໍ່ ຄຣິສ ໄດ້ເລີຍ.",
     text9:
       "ຖ້າຂ້ອຍຢາກເພິ່ມສ່ວນຕ່າງໆ,ມີຫລາຍຫນ້າໃນເວັບໄຊທ໌ ຫລື ສິ່ງທີ່ສັບຊ້ອນກວ່ານັ້ນຈະໄດ້ບໍ?",
-    text10:
-      "ສາມາດເຮັດໄດ້. ກະລຸນາຕິດຕໍ່ ຄຣິສ ເພື່ອປຶກສາລາຍລະອຽດ ເພີ່ມເຕີມ.",
+    text10: "ສາມາດເຮັດໄດ້. ກະລຸນາຕິດຕໍ່ ຄຣິສ ເພື່ອປຶກສາລາຍລະອຽດ ເພີ່ມເຕີມ.",
   },
 };
 
@@ -317,6 +338,11 @@ function setLanguage(lang) {
     const langKey = el.getAttribute("data-lang");
     el.textContent = langTranslations[lang][langKey] || langKey;
   });
+
+  document.querySelectorAll("[data-navbar]").forEach((el) => {
+    const navbarKey = el.getAttribute("data-navbar");
+    el.textContent = navbarTranslations[lang][navbarKey] || navbarKey;
+  });
 }
 
 //FADE IN
@@ -349,7 +375,7 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
 });
 
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     navMenu.classList.remove("active");
     hamburger.classList.remove("active");

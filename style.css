@@ -521,7 +521,6 @@ hr {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 3rem;
   align-items: center;
   gap: 1rem;
 }
@@ -625,15 +624,14 @@ hr {
 
 #pricing-section h2 {
   font-size: 4rem;
-  margin-bottom: 20px;
   text-align: center;
 }
 
 .promise {
   font-size: 1.5rem;
   line-height: 1.5;
-  width: 85%;
-  text-align: center;
+  width: 70%;
+  text-align: justify;
 }
 
 .pricing-card-container {
@@ -692,13 +690,27 @@ hr {
   display: flex;
 }
 
+/* Facebook Styles */
+#fb-section {
+    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+#fb-section h2 {
+  font-size: 3rem;
+}
+
 /* Overview Styles */
 #overview-section {
   height: 100vh;
   /* padding: 2rem; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   margin-bottom: 4rem;
