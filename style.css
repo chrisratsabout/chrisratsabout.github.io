@@ -613,7 +613,7 @@ hr {
 /* Merch Styles */
 #pricing-section {
   height: 100%;
-  padding: 2rem;
+  padding: 2rem 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -671,10 +671,10 @@ hr {
   margin: 1rem 0;
 }
 
-.pricing-card.year-one {
+/* .pricing-card.year-one {
   width: 100%;
   color: #000;
-}
+} */
 
 .pricing-card.post-year-one {
   background-color: #cacaca;
@@ -819,7 +819,7 @@ hr {
 /* faq - accordion styles */
 #faq-section {
   height: 100vh;
-  padding: 2rem;
+  padding: 2rem 0 !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -892,7 +892,7 @@ hr {
 /* Contact Styles */
 #contact-section {
   height: 100%;
-  padding: 2rem;
+  padding: 2rem 0;
   display: flex;
   align-items: center;
   flex-direction: column;
