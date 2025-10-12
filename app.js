@@ -33,12 +33,14 @@ const navbarTranslations = {
 
 const headerTranslations = {
   en: {
-    title: "Chris Ratsabout",
-    text1: "Web Developer",
+    text1: "Showcase to the world what you have to offer.",
+    text2: "Personal, business, artist...get your website today.",
+    text3: "Get Started",
   },
   la: {
-    title: "ຄຣິສ ຣາດສາບຸຊ",
-    text1: "ນັກພັດທະນາ ເວັບໄຊ້",
+    text1: "Showcase to the world what you have to offer.",
+    text2: "ຂໍ້ມູນສ່ວນຕົວ, ທຸລະກິດ, ນັກສິລະປິນ...get your website today.",
+    text3: "Get Started",
   },
 };
 
