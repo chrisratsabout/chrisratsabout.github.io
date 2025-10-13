@@ -190,6 +190,7 @@ a {
   text-align: center;
   gap: 1rem;
   position: relative;
+  width: 100%;
 }
 
 .gradient-layer {
@@ -249,10 +250,9 @@ a {
 
 .header-row-right-div {
   position: relative;
-  width: 100%;
+  width: 95%;
   height: 600px; /* or whatever size you need */
   overflow: hidden;
-  border-radius: 1rem;
 }
 
 .header-row-right-div img {
@@ -260,11 +260,10 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: top;
   opacity: 0;
   animation: fadeSlideshow 12s infinite;
-  border-radius: 1rem;
   /* border: 1px solid red; */
 }
 
@@ -411,7 +410,7 @@ a {
   .header-row-right-div img {
     width: 100%;
     object-position: top;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .header-row-left {
