@@ -23,7 +23,7 @@ const navbarTranslations = {
   },
   la: {
     name: "ຄຣິສ ຣາດສາບຸຊ",
-    text1: "Home",
+    text1: "ໜ້າຫຼັກ",
     text2: "ກ່ຽວກັບ",
     text3: "ຫຜົນງານ",
     text4: "ລາຄາ",
@@ -38,9 +38,9 @@ const headerTranslations = {
     text3: "Get Started",
   },
   la: {
-    text1: "Showcase to the world what you have to offer.",
-    text2: "ຂໍ້ມູນສ່ວນຕົວ, ທຸລະກິດ, ນັກສິລະປິນ...get your website today.",
-    text3: "Get Started",
+    text1: "ສະແດງໃຫ້ໂລກເຫັນສິ່ງທີ່ທ່ານມີໃຫ້.",
+    text2: "ສ່ວນຕົວ, ທຸລະກິດ, ສິນລະປະ...ສ້າງເວັບໄຊຂອງທ່ານມື້ນີ້ເດີ!",
+    text3: "ເລີ່ມຕົ້ນ",
   },
 };
 
