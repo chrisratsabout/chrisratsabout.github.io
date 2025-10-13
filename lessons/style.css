@@ -373,6 +373,10 @@ h1 {
     color: #00085d;
   }
 
+  .header-section {
+    background-attachment: scroll;
+  }
+
   .header-section p {
     color: #00085d;
   }
@@ -387,6 +391,10 @@ h1 {
 
   .img-caption {
     font-size: 1.2rem;
+  }
+
+  .about-container {
+    background-attachment: scroll;
   }
 
   .about-wrapper {
