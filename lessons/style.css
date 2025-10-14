@@ -8,8 +8,8 @@
 }
 
 body {
-  background-color: #efefef;
-  color: #fff;
+  background-color: #0e0e0e;
+  color: #efefef;
   scroll-behavior: smooth;
 }
 
@@ -45,7 +45,7 @@ nav.blurred-background {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #efefef;
 }
 
 .logo-container img {
@@ -68,7 +68,7 @@ nav.blurred-background {
 }
 
 .links-container a {
-  color: #fff;
+  color: #efefef;
   text-decoration: none;
   margin: 0 1rem;
   font-size: 1.5rem;
@@ -91,34 +91,7 @@ nav.blurred-background {
   background-attachment: fixed;
   height: 100vh;
   position: relative;
-  /* transition: 5s; */
-
-  /* animation-name: animate;
-  animation-direction: alternate-reverse;
-  animation-duration: 30s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  animation-timing-function: ease-in-out; */
 }
-
-/* @keyframes animate {
-  0% {
-    background-image: url("header-1.webp");
-  }
-
-  25% {
-    background-image: url("header-1.webp");
-  }
-
-  50% {
-    background-image: url("header-1.webp");
-  }
-
-  75% {
-    background-image: url("header-1.webp");
-  }
-} */
 
 .gradient-overlay {
   position: absolute;
@@ -175,7 +148,8 @@ nav.blurred-background {
   padding: 60px;
   gap: 30px;
   position: relative;
-    color: #000;
+  color: #000;
+  background-color: #efefef;
 }
 
 .full-video-container {
@@ -206,7 +180,7 @@ nav.blurred-background {
   border: 2px solid #000;
   border-radius: 1rem;
   padding: 10px;
-    color: #000;
+  color: #000;
 }
 
 .full-video-btn-link:hover {
@@ -265,6 +239,7 @@ nav.blurred-background {
   width: 100%;
   text-align: center;
   font-size: 8rem;
+  color: rgb(80, 194, 249);
 }
 
 #benefit-section {
@@ -301,7 +276,7 @@ nav.blurred-background {
 }
 
 .benefit-group a {
-  color: #fff;
+  color: #efefef;
 }
 
 .benefit-left {
@@ -450,7 +425,7 @@ nav.blurred-background {
   flex-direction: column;
   /* box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030; */
   /* border-radius: 1rem; */
-  /* border: 1px solid #fff; */
+  /* border: 1px solid #efefef; */
   overflow: hidden;
 }
 
@@ -509,7 +484,7 @@ nav.blurred-background {
   width: 100%;
   height: 100%;
   /* border-radius: 1rem; */
-  /* border: 1px solid #fff; */
+  /* border: 1px solid #efefef; */
   box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030;
 }
 
@@ -523,9 +498,9 @@ nav.blurred-background {
   padding: 1rem;
   font-size: 1.5rem;
   text-align: center;
-  /* border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  /* border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
   border-radius: 0 0 1rem 1rem; */
 }
 
@@ -552,10 +527,10 @@ nav.blurred-background {
   width: 25%;
   min-width: 300px;
   max-width: 400px;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #efefef;
+  border: 1px solid #efefef;
   border-radius: 1rem;
-  /* background-color: #fff; */
+  /* background-color: #efefef; */
   /* box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030; */
 }
 
@@ -594,7 +569,7 @@ nav.blurred-background {
 }
 
 .personal-work p {
-  color: #fff;
+  color: #efefef;
   text-align: center;
 }
 
@@ -612,8 +587,8 @@ nav.blurred-background {
   flex-basis: 33%;
   display: flex;
   flex-direction: column;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #efefef;
+  border: 1px solid #efefef;
   border-radius: 1rem;
   padding: 1rem;
   text-align: center;
@@ -629,7 +604,7 @@ nav.blurred-background {
 
 .artist-icons i {
   font-size: 2rem;
-  color: #fff;
+  color: #efefef;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -710,7 +685,7 @@ nav.blurred-background {
   .inner-circle {
     width: 12px;
     height: 12px;
-    background-color: #fff;
+    background-color: #efefef;
     border-radius: 50%;
     transition: background-color 0.3s ease;
   }
@@ -799,10 +774,11 @@ nav.blurred-background {
 
   #reviews-section {
     height: 100%;
+    padding-bottom: 2rem;
   }
 
   #reviews-section h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
   }
 
@@ -825,7 +801,7 @@ nav.blurred-background {
   }
 
   #benefit-section h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
   }
 
@@ -868,6 +844,11 @@ nav.blurred-background {
   .promise {
     text-align: left;
     width: 100%;
+  }
+
+  .ul-container {
+    flex-direction: column;
+    gap: 0;
   }
 
   .img-caption {
