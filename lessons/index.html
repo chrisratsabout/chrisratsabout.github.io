@@ -180,10 +180,58 @@
                 </div>
 
             </div>
-            <!------------->
-            <!--- ABOUT --->
-            <!------------->
-            <!-- <div class="about-container">
+        </div>
+    </section>
+    <!-- ********************************-->
+    <!-- *                              *-->
+    <!-- *         FAQ SECTION          *-->
+    <!-- *                              *-->
+    <!-- ********************************-->
+    <section id="faq-section">
+        <h2>FAQ</h2>
+        <div class="accordion">
+            <button type="button" class="accordion_btn fade-in" data-faq="text1">What is Chris’s
+                mission?</button>
+            <div class="accordion_content">
+                <p data-faq="text2">He wants to help students learn an instrument, discipline, and develop good practice habits.  </p>
+            </div>
+
+            <button type="button" class="accordion_btn fade-in" data-faq="text3">Can’t I just use a website
+                builder like
+                Squarespace,
+                Wix, Weebly, etc.?</button>
+            <div class="accordion_content">
+                <p data-faq="text4">Of course! However, these tools are limited and generic. If you want 100%
+                    customization, tell Chris what you want and he will get the job done for you.
+                </p>
+            </div>
+
+            <button type="button" class="accordion_btn fade-in" data-faq="text5">Can’t I just use AI?</button>
+            <div class="accordion_content">
+                <p data-faq="text6">Sure, AI is great! If you can make additions and maintain your site with it,
+                    it can
+                    be a helpful
+                    tool.</p>
+            </div>
+
+            <button type="button" class="accordion_btn fade-in" data-faq="text9">What if I want to add more
+                sections,
+                have multiple pages
+                for my website or something more complex?</button>
+            <div class="accordion_content">
+                <p data-faq="text10">Accommodations can always be made. Please contact Chris to
+                    discuss the details.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!------------->
+    <!--- ABOUT --->
+    <!------------->
+    <!-- <div class="about-container">
         <h2>About</h2>
         <div class="about-wrapper">
             <div class="about-card">
@@ -270,10 +318,10 @@
             </div>
         </div>
     </div> -->
-            <!------------->
-            <!-- GALLERY -->
-            <!------------->
-            <!-- <h2 class="h2-class h2-gallery">Gallery</h2>
+    <!------------->
+    <!-- GALLERY -->
+    <!------------->
+    <!-- <h2 class="h2-class h2-gallery">Gallery</h2>
     <div class="photo-container">
         <div class="photo-row">
             <div class="photo-card">
@@ -326,10 +374,10 @@
             </div>
         </div> -->
 
-            <!------------>
-            <!-- VIDEOS -->
-            <!------------>
-            <!-- <h2 class="h2-class">Videos</h2>
+    <!------------>
+    <!-- VIDEOS -->
+    <!------------>
+    <!-- <h2 class="h2-class">Videos</h2>
         <div class="video-container">
             <div class="video-row">
                 <div class="video-card">
@@ -414,10 +462,10 @@
             </div>
         </div> -->
 
-            <!-------------->
-            <!-- PERSONAL -->
-            <!-------------->
-            <!-- <h2 class="h2-class">Personal Work</h2>
+    <!-------------->
+    <!-- PERSONAL -->
+    <!-------------->
+    <!-- <h2 class="h2-class">Personal Work</h2>
         <div class="personal-work">
             <p>Below is a list of releases that Chris has performed on and/or produced.</p>
             <div class="artist-horizontal-container">
@@ -502,32 +550,32 @@
             </div>
         </div>
     </div> -->
-            <script>
-                const body = document.querySelector("body");
-                const mobileNavBtn = document.querySelector(".mobile-nav-btn");
-                const navMenu = document.querySelector(".blurred-background");
-                const navLinks = document.querySelectorAll(".nav-link");
-                const innerCircles = document.querySelectorAll(".inner-circle");
-                mobileNavBtn.addEventListener("click", () => {
-                    navMenu.classList.toggle("active");
-                    mobileNavBtn.classList.toggle("active");
-                    body.classList.toggle("no-scroll");
-                    innerCircles.forEach(circle => {
-                        circle.classList.toggle("active");
-                    });
-                });
+    <script>
+        const body = document.querySelector("body");
+        const mobileNavBtn = document.querySelector(".mobile-nav-btn");
+        const navMenu = document.querySelector(".blurred-background");
+        const navLinks = document.querySelectorAll(".nav-link");
+        const innerCircles = document.querySelectorAll(".inner-circle");
+        mobileNavBtn.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+            mobileNavBtn.classList.toggle("active");
+            body.classList.toggle("no-scroll");
+            innerCircles.forEach(circle => {
+                circle.classList.toggle("active");
+            });
+        });
 
-                navLinks.forEach((link) => {
-                    link.addEventListener("click", () => {
-                        navMenu.classList.remove("active");
-                    });
-                });
+        navLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+                navMenu.classList.remove("active");
+            });
+        });
 
-                // FOOTER COPYRIGHT TEXT
-                // const year = document.querySelector(".year");
-                // const currentYear = new Date().getFullYear();
-                // year.innerHTML = currentYear;
-            </script>
+        // FOOTER COPYRIGHT TEXT
+        // const year = document.querySelector(".year");
+        // const currentYear = new Date().getFullYear();
+        // year.innerHTML = currentYear;
+    </script>
 </body>
 
 </html>
