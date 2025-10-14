@@ -64,7 +64,7 @@
                 <div class="star-container">
                     <i class="fa-solid fa-people-arrows"></i>
                 </div>
-                <h3 class="name">Student Recap</h3>
+                <h3 class="name">1. Student Recap</h3>
                 <p class="review">Address student's questions and concerns. Student demonstrates progress since their
                     previous lesson.</p>
             </article>
@@ -72,7 +72,7 @@
                 <div class="star-container">
                     <i class="fa-solid fa-ear-listen"></i>
                 </div>
-                <h3 class="name">Listen to song</h3>
+                <h3 class="name">2. Listen to song</h3>
                 <p class="review">Learn to develop hearing and learn the song by ear. Chris will
                     write the notes on paper for you (song transcription).</p>
             </article>
@@ -80,7 +80,7 @@
                 <div class="star-container">
                     <i class="fa-solid fa-guitar"></i>
                 </div>
-                <h3 class="name">Learn to play</h3>
+                <h3 class="name">3. Learn to play</h3>
                 <p class="review">Chris demonstrates how to play the song to the student. Note by note, starting slow
                     and gradually increasing to full speed.</p>
             </article>
@@ -88,7 +88,7 @@
                 <div class="star-container">
                     <i class="fa-solid fa-calendar"></i>
                 </div>
-                <h3 class="name">Practice Plan</h3>
+                <h3 class="name">4. Practice Plan</h3>
                 <p class="review">Student has played through the parts and it is time to perfect them. Questions and
                     concerns are addressed again and a practice plan is devised.</p>
             </article>
@@ -131,7 +131,7 @@
             </div>
             <div class="benefit-group fade-in">
                 <div class="benefit-left">
-                    <img src="perform.webp" alt="band performance">
+                    <img src="performance.webp" alt="band performance">
                 </div>
                 <div class="benefit-right">
                     <h3 data-artist="title">Performance</h3>
@@ -193,7 +193,8 @@
             <button type="button" class="accordion_btn fade-in" data-faq="text1">What is Chris’s
                 mission?</button>
             <div class="accordion_content">
-                <p data-faq="text2">He wants to help students learn an instrument, discipline, and develop good practice habits.  </p>
+                <p data-faq="text2">He wants to help students learn an instrument, discipline, and develop good practice
+                    habits. </p>
             </div>
 
             <button type="button" class="accordion_btn fade-in" data-faq="text3">Can’t I just use a website
@@ -551,6 +552,28 @@
         </div>
     </div> -->
     <script>
+        //target all buttons
+        const btns = document.querySelectorAll('.accordion_btn');
+
+        //loop buttons
+        //click event for all buttons
+        //loop buttons again with a parameter of 'item' in this case
+        //write an if statement to say that if the 'item' does not match the button that is clicked, then that accordion_btn_active class will be removed
+        //query selector for the accordion content (which is hidden by default in css)
+        //the button will toggle to the active accordion_btn_active class and appear
+
+        btns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                btns.forEach(function (item) {
+                    if (item !== btn) {
+                        item.classList.remove('accordion_btn_active');
+                    }
+                })
+                const accordionContent = document.querySelectorAll('.accordion_content');
+                btn.classList.toggle('accordion_btn_active');
+            })
+        })
+
         const body = document.querySelector("body");
         const mobileNavBtn = document.querySelector(".mobile-nav-btn");
         const navMenu = document.querySelector(".blurred-background");

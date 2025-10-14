@@ -387,6 +387,131 @@ nav.blurred-background {
   gap: 1rem;
 }
 
+/* FAQ Styles */
+#faq-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+  padding: 2rem;
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  background-color: #efefef;
+  color: #000;
+}
+
+#faq-section h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.faq-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  overflow: hidden;
+}
+
+.faq-container {
+  flex-basis: 50%;
+  flex: 1;
+  padding: 0 2rem;
+}
+
+.faq-container img {
+  width: 100%;
+}
+
+.faq-container.right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 1.8rem;
+}
+
+.faq-text-container {
+  width: 100%;
+  flex: 1;
+  padding: 2rem;
+  background-color: rgb(230, 230, 230);
+}
+
+.faq-text-container h4 {
+  font-weight: 900;
+}
+
+.faq-text {
+  font-size: 1.5rem;
+}
+
+/* faq - accordion styles */
+
+
+.accordion {
+  width: 70%;
+  /* border: 1px solid red; */
+}
+
+.accordion_btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #0e0e0e;
+  color: #fff;
+  text-align: left;
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  /* box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030; */
+  font-size: 1.3rem;
+}
+
+.accordion_btn:hover {
+  background-color: #393939;
+}
+
+.accordion_btn::after {
+  content: "\25be";
+  float: right;
+  transform: scale(1.5);
+}
+
+.accordion_btn_active {
+  background: #4b4b4b;
+  margin-bottom: 0;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.accordion_btn_active::after {
+  content: "\25b4";
+}
+
+.accordion_btn_active + .accordion_content {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.accordion_content {
+  display: none;
+  overflow: hidden;
+  padding: 0 15px;
+  background: #707070;
+  color: #fff;
+  /* border-radius: 12px; */
+  padding: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+
+
 /**FIND OUT WHY YOUTUBE BTN DOESNT WORK***/
 
 .about-container {
@@ -849,6 +974,37 @@ nav.blurred-background {
   .ul-container {
     flex-direction: column;
     gap: 0;
+  }
+
+  /* faq Mobile Styles */
+
+  #faq-section {
+    padding: 2rem 0;
+    height: 100%;
+  }
+
+  #faq-section h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .faq-wrapper {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .faq-container {
+    flex-basis: 100%;
+    padding: 1rem;
+  }
+
+  .faq-text-container {
+    font-size: 1.4rem;
+  }
+
+  .accordion {
+    width: 90%;
   }
 
   .img-caption {
