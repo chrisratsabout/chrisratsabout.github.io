@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Figtree, Arial, sans-serif;
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -206,6 +206,10 @@ nav.blurred-background {
   padding: 1rem;
   gap: 1rem;
   background-color: #0e0e0e;
+  background-image: url("lesson-bkgd.webp");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
 }
 
 .lessons-wrapper {
@@ -315,6 +319,10 @@ nav.blurred-background {
   gap: 2rem;
   width: 100%;
   background-color: #0e0e0e;
+  background-image: url("pricing-bkgd.webp");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
 }
 
 #pricing h2 {
@@ -347,8 +355,9 @@ nav.blurred-background {
   align-items: center;
   font-size: 1.9rem;
   border-radius: 1rem;
-  background-color: #efefef;
+  background-color: #ffffff;
   color: #0e0e0e;
+  opacity: 0.6;
 }
 
 .pricing-card i {
@@ -447,7 +456,6 @@ nav.blurred-background {
 
 /* faq - accordion styles */
 
-
 .accordion {
   width: 70%;
   /* border: 1px solid red; */
@@ -509,8 +517,6 @@ nav.blurred-background {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
-
-
 
 /**FIND OUT WHY YOUTUBE BTN DOESNT WORK***/
 
