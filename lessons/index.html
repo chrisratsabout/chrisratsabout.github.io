@@ -37,15 +37,15 @@
                 <a class="nav-link" href="#contact">Contact</a>
             </div>
             <div class="btn-container">
-                <a href="#contact">Book Now</a>
+                <a href="#contact" class="nav-link">Book Now</a>
             </div>
         </nav>
         <div class="gradient-overlay"></div>
         <div class="cta-text">
             <h2>Start your musical journey today!</h2>
             <p>Private lessons catered to your interests.</p>
-                <a href="#contact" class="cta-book-now">Book Now</a>
-     
+            <a href="#contact" class="cta-book-now">Book Now</a>
+
         </div>
     </div>
     <!-- ********************************-->
@@ -625,7 +625,12 @@
         navLinks.forEach((link) => {
             link.addEventListener("click", () => {
                 navMenu.classList.remove("active");
+                innerCircles.forEach(circle => {
+                    circle.classList.toggle("active");
+                });
+                mobileNavBtn.classList.toggle("active");
             });
+
         });
 
         // FOOTER COPYRIGHT TEXT

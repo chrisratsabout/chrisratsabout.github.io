@@ -877,6 +877,10 @@ nav.blurred-background {
 }
 
 @media (max-width: 768px) {
+  section {
+    scroll-margin-top: 100px;
+  }
+  
   nav.blurred-background {
     position: fixed;
     display: block;
