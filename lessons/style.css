@@ -85,6 +85,7 @@ nav.blurred-background {
   color: #000;
   cursor: pointer;
   transition: filter .3s ease-in-out;
+  text-align: center;
 }
 
 .cta-book-now {
@@ -978,6 +979,17 @@ nav.blurred-background {
 
   .btn-container {
     margin-top: 1rem;
+  }
+
+  .btn-container a {
+    display: block;
+    width: 160px;
+  }
+
+  .cta-book-now {    
+    display: block;
+    margin: 0 auto;
+    width: 300px;
   }
 
   .header-section {
