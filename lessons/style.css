@@ -420,7 +420,7 @@ nav.blurred-background {
   align-items: center;
   justify-content: start;
   height: 100%;
-  padding: 2rem;
+  padding: 2rem 0;
   font-family: Quicksand, Arial, Helvetica, sans-serif;
   background-color: #efefef;
   color: #000;
@@ -475,7 +475,6 @@ nav.blurred-background {
 
 .accordion {
   width: 70%;
-  /* border: 1px solid red; */
 }
 
 .accordion_btn {
