@@ -74,12 +74,28 @@ nav.blurred-background {
   font-size: 1.5rem;
 }
 
-.btn-container button {
+.btn-container a,
+.cta-book-now {
   background-color: rgb(80, 194, 249);
   padding: 1rem 2rem;
   border: none;
   border-radius: 1000px;
   font-size: 1.2rem;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  transition: filter .3s ease-in-out;
+}
+
+.cta-book-now {
+  width: 35%;
+  text-align: center;
+}
+
+
+.btn-container a:hover,
+.cta-book-now:hover {
+  filter: brightness(85%);
 }
 
 /*** HEADER STYLES ***/
@@ -535,15 +551,12 @@ nav.blurred-background {
 }
 
 #contact form {
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: start;
   font-size: 1.3rem;
-  background: rgb(0, 0, 0, 0.4);
-  padding: 2rem;
-  border-radius: 1rem;
 }
 
 #contact h2 {
