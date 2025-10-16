@@ -1,0 +1,232 @@
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+nav.blurred-background {
+  position: absolute; /* or sticky, depending on your layout */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  background: transparent; /* translucent layer */
+  backdrop-filter: blur(10px); /* creates the blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+
+  color: white;
+  z-index: 1000;
+  transition: height 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #efefef;
+}
+
+.logo-container img {
+  width: 60px;
+  margin-right: 1rem;
+}
+
+.logo-container p {
+  font-size: 3rem;
+}
+
+.logo-container-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container button {
+  display: none;
+}
+
+.links-container a {
+  color: #efefef;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.btn-container a,
+.cta-book-now {
+  background-color: rgb(80, 194, 249);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1000px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  transition: filter 0.3s ease-in-out;
+  text-align: center;
+}
+
+.cta-book-now {
+  width: 35%;
+  text-align: center;
+}
+
+.links-container a:hover {
+  color: rgb(80, 194, 249);
+}
+
+.btn-container a:hover,
+.cta-book-now:hover {
+  filter: brightness(85%);
+}
+
+/* Footer Styles */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-container h4 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 100px;
+  }
+
+  nav.blurred-background {
+    position: fixed;
+    display: block;
+    flex-direction: column;
+    justify-content: start;
+    padding: 1rem;
+    gap: 1rem;
+    height: 100px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    background-color: #000;
+  }
+
+  .blurred-background.active {
+    height: 100vh;
+    background-color: #000000;
+  }
+
+  .links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .logo-container {
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  .logo-container img {
+    width: 40px;
+    margin-right: 1rem;
+  }
+
+  .logo-container p {
+    font-size: 2rem;
+  }
+
+  .mobile-nav-btn {
+    width: 30px;
+    height: 30px;
+    padding: 0.2rem;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  /* when active, rotate 90 degrees */
+  .mobile-nav-btn.active {
+    transform: rotate(225deg);
+  }
+
+  .inner-circle {
+    width: 12px;
+    height: 12px;
+    background-color: #efefef;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+
+  .inner-circle.active {
+    background-color: rgb(80, 194, 249);
+  }
+
+  .mobile-nav-btn .inner-circle:nth-child(1) {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: translate(0%, 0%);
+  }
+
+  .mobile-nav-btn .inner-circle:nth-child(2) {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    transform: translate(0%, 0%);
+  }
+
+  .mobile-nav-btn .inner-circle:nth-child(3) {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    transform: translate(0%, 0%);
+  }
+
+  .mobile-nav-btn .inner-circle:nth-child(4) {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    transform: translate(0%, 0%);
+  }
+
+  .logo-container button {
+    display: block;
+  }
+
+  .links-container {
+    margin-top: 1rem;
+  }
+
+  .btn-container {
+    margin-top: 1rem;
+  }
+
+  .btn-container a {
+    display: block;
+    width: 160px;
+  }
+
+  .cta-book-now {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .footer-container {
+    padding: 1rem;
+  }
+}
