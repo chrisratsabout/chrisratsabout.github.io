@@ -101,7 +101,7 @@ nav.blurred-background {
 
 /*** HEADER STYLES ***/
 .header-section {
-  background-image: url("header-new.webp");
+  background-image: url("images/header-new.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -223,7 +223,7 @@ nav.blurred-background {
   padding: 1rem;
   gap: 1rem;
   background-color: #0e0e0e;
-  background-image: url("lesson-bkgd.webp");
+  background-image: url("images/lesson-bkgd.webp");
   background-size: cover;
   background-repeat: none;
   background-position: center;
@@ -336,7 +336,7 @@ nav.blurred-background {
   gap: 2rem;
   width: 100%;
   background-color: #0e0e0e;
-  background-image: url("pricing-bkgd.webp");
+  background-image: url("images/pricing-bkgd.webp");
   background-size: cover;
   background-repeat: none;
   background-position: center;
@@ -544,7 +544,7 @@ nav.blurred-background {
   gap: 2rem;
   width: 100%;
   background-color: #0e0e0e;
-  background-image: url("contact-04.webp");
+  background-image: url("images/contact-04.webp");
   background-size: cover;
   background-repeat: none;
   background-position: center;
@@ -660,7 +660,7 @@ nav.blurred-background {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("about-bkgd.webp");
+  background-image: url("images/about-bkgd.webp");
   background-color: rgb(239, 239, 239);
   background-position: center;
   background-size: cover;
