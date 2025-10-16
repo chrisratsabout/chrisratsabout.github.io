@@ -547,6 +547,19 @@ body {
   width: 30%;
 }
 
+/* OBSERVER STYLES */
+
+.fade-in {
+  transform: translateY(3rem);
+  opacity: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fade-in.show {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 
 /**FIND OUT WHY YOUTUBE BTN DOESNT WORK***/
 

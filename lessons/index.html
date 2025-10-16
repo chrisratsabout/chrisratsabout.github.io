@@ -117,8 +117,7 @@
         <div class="skills-container">
             <div class="skills-group fade-in">
                 <div class="skills-left">
-                    <img src="images/music-theory.webp"
-                        alt="sheet music">
+                    <img src="images/music-theory.webp" alt="sheet music">
                 </div>
                 <div class="skills-right">
                     <h3 data-personal="title">Music Theory</h3>
@@ -652,6 +651,27 @@
         const year = document.querySelector(".year");
         const currentYear = new Date().getFullYear();
         year.innerHTML = currentYear;
+
+        //FADE IN
+        const fadeIn = document.querySelectorAll(".fade-in");
+
+        const fadeInObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show"); // Add show class when intersected
+                        fadeInObserver.unobserve(entry.target); // Stop observing once shown
+                    }
+                });
+            },
+            {
+                threshold: 0.5,
+            }
+        );
+
+        fadeIn.forEach((fade) => {
+            fadeInObserver.observe(fade);
+        });
     </script>
 </body>
 
