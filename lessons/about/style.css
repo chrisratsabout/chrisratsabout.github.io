@@ -681,7 +681,7 @@ nav.blurred-background {
   display: flex;
   flex-direction: column;
   /* box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030; */
-  /* border-radius: 1rem; */
+  border-radius: 1rem;
   /* border: 1px solid #efefef; */
   overflow: hidden;
 }
