@@ -1,7 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Your blog data source
   const blogData = [
-        {
+    {
+      src: "images/251016-fall.webp",
+      alt: "fall",
+      date: "October 16, 2025",
+      text: "Sunset and peak Fall colors at CMS",
+    },
+    {
       src: "images/250927-gtr-fest.webp",
       alt: "guitar fest",
       date: "September 27, 2025",
@@ -170,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cards.forEach((card) => {
       // Randomly pick -2, 0, or 2 degrees
-      const randomAngle = [-1, 0.5, 1][Math.floor(Math.random() * 3)];
+      const randomAngle = [-.4, 0.2, .4][Math.floor(Math.random() * 3)];
       card.style.transform = `rotate(${randomAngle}deg)`;
     });
   }
