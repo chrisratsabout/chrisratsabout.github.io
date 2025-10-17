@@ -108,17 +108,16 @@ body {
 .full-video-btn-link {
   text-decoration: none;
   font-size: 2rem;
-  border: 2px solid #000;
-  border-radius: 1rem;
-  padding: 10px;
+  border-radius: 1000px;
+  padding: 1rem 2rem;
   color: #000;
+  background-color: rgb(80, 194, 249);
+  transition: filter 0.3s ease-in-out;
 }
 
 .full-video-btn-link:hover {
   cursor: pointer;
   filter: brightness(85%);
-  transition: 0.3s ease-in-out;
-  background-color: rgb(255, 255, 255);
 }
 
 #lessons-section h2,
@@ -560,7 +559,6 @@ body {
   opacity: 1;
 }
 
-
 /**FIND OUT WHY YOUTUBE BTN DOESNT WORK***/
 
 .about-container {
@@ -804,7 +802,6 @@ body {
 }
 
 @media (max-width: 768px) {
- 
   .header-section {
     background-attachment: scroll;
     background-position: 80%;
@@ -843,9 +840,12 @@ body {
     font-size: 2rem;
   }
 
+  .full-video-btn-link {
+    font-size: 1.4rem;
+  }
+
   #lessons-section {
     height: 100%;
-    padding-bottom: 2rem;
   }
 
   #lessons-section h2 {
@@ -868,7 +868,7 @@ body {
 
   /* Benefits Mobile Styles */
   #skills-section {
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 1rem;
   }
 
   #skills-section h2 {
@@ -882,6 +882,7 @@ body {
 
   .skills-container {
     width: 100%;
+    gap: 1rem;
   }
 
   .skills-group {
@@ -896,7 +897,7 @@ body {
 
   #pricing {
     height: 100%;
-    padding: 2rem 1rem;
+    padding: 1rem;
   }
 
   .pricing-card-container {
