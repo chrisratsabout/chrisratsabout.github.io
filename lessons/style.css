@@ -63,7 +63,7 @@ body {
 .cta-text {
   position: absolute;
   top: 40%;
-  left: 20%;
+  left: 15%;
   z-index: 99;
   width: 30%;
   display: flex;
