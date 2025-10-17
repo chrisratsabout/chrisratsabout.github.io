@@ -6,6 +6,28 @@
   box-sizing: border-box;
   font-family: Figtree, Arial, sans-serif;
   scroll-behavior: smooth;
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: rgb(80, 194, 249) #6b6b6b; /* thumb color, track color */
+}
+
+/* Works in Chrome, Edge, Safari, Opera */
+::-webkit-scrollbar {
+  width: 12px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the track */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(80, 194, 249); /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the thumb */
+  border: 2px solid #6b6b6b; /* creates padding around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(69, 169, 220); /* color on hover */
 }
 
 body {
