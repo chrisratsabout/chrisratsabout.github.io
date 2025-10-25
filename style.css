@@ -406,7 +406,7 @@ a {
     padding: 0;
     height: 220px;
     width: 100%;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
 
   .header-row-right-div img {
@@ -693,7 +693,7 @@ hr {
 
 /* Facebook Styles */
 #fb-section {
-    height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -830,65 +830,69 @@ hr {
 
 .accordion {
   width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.3rem;
   /* border: 1px solid red; */
 }
 
+.accordion_item {
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
 .accordion_btn {
-  display: block;
-  width: 100%;
-  padding: 1rem;
-  border: none;
-  outline: none;
   cursor: pointer;
   background: #ececec;
-  color: #000000;
+  padding: 1rem;
+  border: none;
+  width: 100%;
   text-align: left;
-  transition: background-color 0.3s ease-in-out;
-  margin-bottom: 1rem;
+  font-weight: 600;
+  transition: background 0.3s, border-radius 0.3s ease;
   border-radius: 1rem;
-  /* box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030; */
   font-size: 1.3rem;
 }
 
-.accordion_btn:hover {
-  background-color: #d2d2d2;
-}
-
-.accordion_btn::after {
-  content: "\25be";
-  float: right;
-  transform: scale(1.5);
-}
-
-.accordion_btn_active {
-  background: #989898;
-  margin-bottom: 0;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-.accordion_btn_active::after {
-  content: "\25b4";
-}
-
-.accordion_btn_active + .accordion_content {
-  display: block;
-  margin-bottom: 1rem;
+.accordion_item.active .accordion_btn {
+  background: #999999;
+  border-radius: 1rem 1rem 0 0;
 }
 
 .accordion_content {
-  display: none;
+  max-height: 0;
   overflow: hidden;
-  padding: 0 15px;
-  background: #dedede;
-  color: #000;
-  /* border-radius: 12px; */
-  padding: 1rem;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  transition: max-height 0.3s ease;
+  background: #bdbdbd;
+  border-radius: 0 0 1rem 1rem;
 }
+
+/* 👇 Put padding here instead of .accordion_content */
+.accordion_inner {
+  padding: 1rem;
+}
+
+/* The plus sign on the right */
+.accordion_btn::after {
+  content: '+';
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #555;
+}
+
+/* When active, rotate it to form an 'X' */
+.accordion_item.active .accordion_btn::after {
+  transform: translateY(-50%) rotate(45deg);
+  color: #000;
+}
+
 
 /* Contact Styles */
 #contact-section {
@@ -1219,7 +1223,7 @@ hr {
   }
 
   /* Facebook Mobile Styles */
-    #fb-section {
+  #fb-section {
     height: 100%;
     padding: 2rem 1rem;
     text-align: center;

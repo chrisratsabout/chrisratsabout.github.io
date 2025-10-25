@@ -338,34 +338,54 @@
     <section id="faq-section">
         <h2>FAQ</h2>
         <div class="accordion">
-            <button type="button" class="accordion_btn fade-in" data-faq="text1">What is Chris’s mission?</button>
-            <div class="accordion_content">
-                <p data-faq="text2">He wants to help people and businesses proudly display what they
-                    offer and see them thrive. </p>
+            <div class="accordion_item">
+                <button type="button" class="accordion_btn fade-in" data-faq="text1">What is Chris’s mission?</button>
+                <div class="accordion_content">
+                    <div class="accordion_inner">
+                        <p data-faq="text2">He wants to help people and businesses proudly display what they
+                            offer and see them thrive. </p>
+                    </div>
+                </div>
             </div>
 
-            <button type="button" class="accordion_btn fade-in" data-faq="text3">Can’t I just use a website builder like
-                Squarespace,
-                Wix, Weebly, etc.?</button>
-            <div class="accordion_content">
-                <p data-faq="text4">Of course! However, these tools are limited and generic. If you want 100%
-                    customization, tell Chris what you want and he will get the job done for you.
-                </p>
+            <div class="accordion_item">
+                <button type="button" class="accordion_btn fade-in" data-faq="text3">Can’t I just use a website builder
+                    like
+                    Squarespace,
+                    Wix, Weebly, etc.?</button>
+                <div class="accordion_content">
+                    <div class="accordion_inner">
+                        <p data-faq="text4">Of course! However, these tools are limited and generic. If you want 100%
+                            customization, tell Chris what you want and he will get the job done for you.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <button type="button" class="accordion_btn fade-in" data-faq="text5">Can’t I just use AI?</button>
-            <div class="accordion_content">
-                <p data-faq="text6">Sure, AI is great! If you can make additions and maintain your site with it, it can
-                    be a helpful
-                    tool.</p>
+            <div class="accordion_item">
+                <button type="button" class="accordion_btn fade-in" data-faq="text5">Can’t I just use AI?</button>
+                <div class="accordion_content">
+                    <div class="accordion_inner">
+                        <p data-faq="text6">Sure, AI is great! If you can make additions and maintain your site with it,
+                            it
+                            can
+                            be a helpful
+                            tool.</p>
+                    </div>
+                </div>
             </div>
 
-            <button type="button" class="accordion_btn fade-in" data-faq="text9">What if I want to add more sections,
-                have multiple pages
-                for my website or something more complex?</button>
-            <div class="accordion_content">
-                <p data-faq="text10">Accommodations can always be made. Please contact Chris to
-                    discuss the details.</p>
+            <div class="accordion_item">
+                <button type="button" class="accordion_btn fade-in" data-faq="text9">What if I want to add more
+                    sections,
+                    have multiple pages
+                    for my website or something more complex?</button>
+                <div class="accordion_content">
+                    <div class="accordion_inner">
+                        <p data-faq="text10">Accommodations can always be made. Please contact Chris to
+                            discuss the details.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -379,7 +399,7 @@
             </div>
             <div class="label-input-container">
                 <label htmlFor="email" data-contact="text2">Email:</label>
-                <input type="email" name="email" id="email"  autocomplete="off" required />
+                <input type="email" name="email" id="email" autocomplete="off" required />
             </div>
             <div class="label-input-container">
                 <label htmlFor="message" data-contact="text3">Message:</label>
@@ -402,7 +422,7 @@
     </footer>
     <script>
         //target all buttons
-        const btns = document.querySelectorAll('.accordion_btn');
+        // const btns = document.querySelectorAll('.accordion_btn');
 
         //loop buttons
         //click event for all buttons
@@ -411,17 +431,45 @@
         //query selector for the accordion content (which is hidden by default in css)
         //the button will toggle to the active accordion_btn_active class and appear
 
-        btns.forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                btns.forEach(function (item) {
-                    if (item !== btn) {
-                        item.classList.remove('accordion_btn_active');
+        // btns.forEach(function (btn) {
+        //     btn.addEventListener('click', function () {
+        //         btns.forEach(function (item) {
+        //             if (item !== btn) {
+        //                 item.classList.remove('accordion_btn_active');
+        //             }
+        //         })
+        //         const accordionContent = document.querySelectorAll('.accordion_content');
+        //         btn.classList.toggle('accordion_btn_active');
+        //     })
+        // })
+
+        const accordions = document.querySelectorAll('.accordion_item');
+
+        accordions.forEach((item) => {
+            const btn = item.querySelector('.accordion_btn');
+            const content = item.querySelector('.accordion_content');
+
+            btn.addEventListener('click', () => {
+                // Close all other accordions
+                accordions.forEach((otherItem) => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                        const otherContent = otherItem.querySelector('.accordion_content');
+                        otherContent.style.maxHeight = null;
                     }
-                })
-                const accordionContent = document.querySelectorAll('.accordion_content');
-                btn.classList.toggle('accordion_btn_active');
-            })
-        })
+                });
+
+                // Toggle the clicked one
+                item.classList.toggle('active');
+
+                if (item.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } else {
+                    content.style.maxHeight = null;
+                }
+            });
+        });
+
 
         //FOOTER TEXT
         const year = document.querySelector('.year');
