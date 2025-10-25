@@ -347,26 +347,22 @@ function setLanguage(lang) {
   });
 }
 
-//FADE IN
-const fadeIn = document.querySelectorAll(".fade-in");
+const faders = document.querySelectorAll('.fade-in');
 
-const fadeInObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show"); // Add show class when intersected
-        fadeInObserver.unobserve(entry.target); // Stop observing once shown
-      }
-    });
-  },
-  {
-    threshold: 0.5,
-  }
-);
+const observerOptions = {
+  threshold: 0.1
+};
 
-fadeIn.forEach((fade) => {
-  fadeInObserver.observe(fade);
-});
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target); // optional: fade in only once
+    }
+  });
+}, observerOptions);
+
+faders.forEach(el => observer.observe(el));
 
 const navMenu = document.querySelector(".nav-menu");
 const hamburger = document.querySelector(".hamburger");
