@@ -693,9 +693,9 @@ hr {
 
 .branding-section {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .branding-section h2 {
@@ -723,6 +723,7 @@ hr {
   height: 100%;
   object-fit: cover;
   border-radius: 1rem;
+  box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030;
 }
 
 .branding-right {
@@ -731,11 +732,11 @@ hr {
 
 .branding-right img {
   width: 100%;
-  height: calc(50% - .5rem);
-  object-fit: cover; 
+  height: calc(50% - 0.5rem);
+  object-fit: cover;
   border-radius: 1rem;
+  box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030;
 }
-
 
 /* Facebook Styles */
 #fb-section {
@@ -923,7 +924,7 @@ hr {
 
 /* ✅ plus sign */
 .accordion_btn::after {
-  content: '+';
+  content: "+";
   position: absolute;
   right: 1rem;
   top: 50%;
@@ -938,7 +939,6 @@ hr {
   transform: translateY(-50%) rotate(45deg);
   color: #000;
 }
-
 
 /* Contact Styles */
 #contact-section {
