@@ -902,6 +902,8 @@ hr {
   font-size: 1.3rem;
   border-radius: 1rem;
   transition: background 0.3s, border-radius 0.3s ease;
+  -webkit-text-fill-color: black !important;
+  color: black !important;
 }
 
 .accordion_item.active .accordion_btn {
