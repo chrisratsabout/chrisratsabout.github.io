@@ -731,7 +731,7 @@ hr {
 
 .branding-right img {
   width: 100%;
-  height: 50%;
+  height: calc(50% - .5rem);
   object-fit: cover; 
   border-radius: 1rem;
 }
