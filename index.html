@@ -65,13 +65,13 @@
             <div class="header-row">
                 <div class="header-row-left">
                     <h1 data-header="text1">Showcase to the world what you have to offer.</h1>
-                                        <p data-header="text2">Personal, business, artist...get your website today.</p>
+                    <p data-header="text2">Personal, business, artist...get your website today.</p>
                     <div class="header-row-right-div">
                         <img src="images/clients/bt-0.webp" alt="">
                         <img src="images/clients/bt-1.webp" alt="">
                         <img src="images/clients/bt-3.webp" alt="">
                     </div>
-                    <a href="#contact-section" data-header="text3">Get Started</a>
+                    <a href="#portfolio-section" data-header="text3">View Work</a>
                 </div>
             </div>
             </div>
@@ -105,41 +105,12 @@
                 <img src="images/2025-headshot.webp" alt="">
             </div>
         </div>
-        <div class="tech-logos">
-            <div class="tech-logo-row">
-                <img src="images/logos/html.webp" alt="html">
-                <img src="images/logos/css.webp" alt="css">
-                <img src="images/logos/js.webp" alt="js">
-                <img src="images/logos/java.webp" alt="java">
-                <img src="images/logos/postgres.webp" alt="postgres">
-                <img src="images/logos/intellij.webp" alt="intellij">
-                <img src="images/logos/spring.webp" alt="spring">
-                <img src="images/logos/react.webp" alt="react">
-                <img src="images/logos/github.webp" alt="github">
-                <img src="images/logos/vscode.webp" alt="vscode">
-            </div>
-        </div>
     </section>
     <!-- ********************************-->
     <!-- *                              *-->
-    <!-- *      FACEBOOK SECTION        *-->
+    <!-- *      BRANDING SECTION        *-->
     <!-- *                              *-->
     <!-- ********************************-->
-    <!-- <section id="fb-section">
-        <h2 data-facebook="text1">Facebook pages are limited and generic.</h2>
-        <img class="facebook" src="images/facebook.webp" alt="facebook-page">
-    </section> -->
-    <!-- ********************************-->
-    <!-- *                              *-->
-    <!-- *          MURM SECTION        *-->
-    <!-- *                              *-->
-    <!-- ********************************-->
-    <!-- <section id="overview-section" class="murm">
-        <h2 data-unique="text1">Be informative and unique!</h2>
-        <div class="website-demo">
-            <img class="demo-image" src="images/murm-website.webp" alt="the-murmurations-website">
-        </div>
-    </section> -->
     <section class="branding-section">
         <h2>Get a website that matches your brand.</h2>
         <div class="branding-container">
@@ -151,6 +122,7 @@
                 <img src="images/pixabay.webp" alt="">
             </div>
         </div>
+        <p class="branding-photo-cred">* Photos courtesy of Chitphavan Textile and Pixabay *</p>
     </section>
     <!-- ********************************-->
     <!-- *                              *-->
@@ -454,30 +426,30 @@
         // })
 
         document.addEventListener("DOMContentLoaded", () => {
-  const accordions = document.querySelectorAll('.accordion_item');
+            const accordions = document.querySelectorAll('.accordion_item');
 
-  accordions.forEach((item) => {
-    const btn = item.querySelector('.accordion_btn');
-    const content = item.querySelector('.accordion_content');
+            accordions.forEach((item) => {
+                const btn = item.querySelector('.accordion_btn');
+                const content = item.querySelector('.accordion_content');
 
-    btn.addEventListener('click', () => {
-      accordions.forEach((otherItem) => {
-        if (otherItem !== item) {
-          otherItem.classList.remove('active');
-          otherItem.querySelector('.accordion_content').style.maxHeight = null;
-        }
-      });
+                btn.addEventListener('click', () => {
+                    accordions.forEach((otherItem) => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('.accordion_content').style.maxHeight = null;
+                        }
+                    });
 
-      const isActive = item.classList.toggle('active');
+                    const isActive = item.classList.toggle('active');
 
-      if (isActive) {
-        content.style.maxHeight = content.scrollHeight + "px";
-      } else {
-        content.style.maxHeight = null;
-      }
-    });
-  });
-});
+                    if (isActive) {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    } else {
+                        content.style.maxHeight = null;
+                    }
+                });
+            });
+        });
 
 
         //FOOTER TEXT

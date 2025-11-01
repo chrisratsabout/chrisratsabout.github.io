@@ -35,12 +35,12 @@ const headerTranslations = {
   en: {
     text1: "Showcase to the world what you have to offer.",
     text2: "Personal, business, artist...get your website today.",
-    text3: "Get Started",
+    text3: "View Work",
   },
   la: {
     text1: "ສະແດງໃຫ້ໂລກເຫັນສິ່ງທີ່ທ່ານມີໃຫ້.",
     text2: "ສ່ວນຕົວ, ທຸລະກິດ, ສິນລະປະ...ສ້າງເວັບໄຊຂອງທ່ານມື້ນີ້ເດີ!",
-    text3: "ເລີ່ມຕົ້ນ",
+    text3: "ເບິ່ງຜົນງານ",
   },
 };
 

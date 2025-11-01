@@ -432,8 +432,9 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 100vh;
+  height: 100%;
   background-color: #ececec;
+  padding: 4rem 0;
   /* border: 1px solid red; */
 }
 
@@ -706,12 +707,17 @@ hr {
   margin: 2rem 0;
 }
 
+.branding-photo-cred {
+  font-size: .6rem;
+  margin-bottom: 2rem;
+}
+
 .branding-container {
   display: flex;
   width: 70%;
   height: 800px; /* or any height you prefer */
   gap: 1rem; /* optional space between columns */
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .branding-left,
