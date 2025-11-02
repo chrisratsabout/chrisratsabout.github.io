@@ -1,3 +1,15 @@
+const textEl = document.getElementById("scrollText");
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+
+  // Increase speed by multiplying scrollTop
+  const progress = Math.min(scrollTop / 100, 1); // adjust 200 to control sensitivity
+  const position = 100 - progress * 100;
+
+  textEl.style.backgroundPosition = `${position}% 0`;
+});
+
 function changeHamburgerBackground() {
   const navBar = document.querySelector(".navbar");
   let scrollValue = window.scrollY;
