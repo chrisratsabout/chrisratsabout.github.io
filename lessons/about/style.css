@@ -278,7 +278,7 @@ nav.blurred-background {
   position: relative;
 }
 
-.pics:hover .pics-slide {
+.pics-slide:hover {
   animation-play-state: paused;
 }
 
