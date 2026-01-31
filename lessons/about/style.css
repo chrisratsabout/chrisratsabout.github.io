@@ -140,6 +140,16 @@ nav.blurred-background {
   position: relative;
 }
 
+.gallery-header-section {
+  background-image: url("../gallery/images/gallery-header-bkgd-new.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
 .gradient-overlay {
   position: absolute;
   top: 0;

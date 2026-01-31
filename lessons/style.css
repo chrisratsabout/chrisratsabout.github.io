@@ -35,7 +35,6 @@ body {
   color: #efefef;
 }
 
-
 /*** HEADER STYLES ***/
 .header-section {
   background-image: url("images/header-new.webp");
@@ -540,7 +539,7 @@ body {
   width: 300px;
   display: block;
   text-align: center;
-  border-radius: 1rem;
+  border-radius: 5rem;
   color: #fff;
   background-color: rgb(80, 194, 249);
 }
@@ -680,7 +679,9 @@ body {
   height: 100%;
   /* border-radius: 1rem; */
   /* border: 1px solid #efefef; */
-  box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030;
+  box-shadow:
+    0 2px 4px #0003,
+    0 6px 20px #00000030;
 }
 
 .img-caption {
@@ -912,6 +913,10 @@ body {
     flex-direction: column;
     width: 100%;
     padding: 1rem;
+  }
+
+  .photo-row {
+    flex-direction: column;
   }
 
   .photo-card {
