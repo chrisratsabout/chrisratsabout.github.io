@@ -282,7 +282,7 @@ nav.blurred-background {
   justify-content: center;
   color: #000;
   gap: 2rem;
-   background-color: rgb(239, 239, 239) !important;
+  background-color: rgb(239, 239, 239) !important;
 }
 
 .mentions-wrapper {
@@ -380,7 +380,9 @@ nav.blurred-background {
   height: 100%;
   /* border-radius: 1rem; */
   /* border: 1px solid #efefef; */
-  box-shadow: 0 2px 4px #0003, 0 6px 20px #00000030;
+  box-shadow:
+    0 2px 4px #0003,
+    0 6px 20px #00000030;
 }
 
 .img-caption {
@@ -657,6 +659,11 @@ nav.blurred-background {
   .header-section {
     background-attachment: scroll;
     background-position: 40%;
+    overflow: hidden;
+  }
+
+  .gallery-header-section {
+    background-attachment: scroll;
     overflow: hidden;
   }
 
