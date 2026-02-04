@@ -106,7 +106,43 @@ nav.blurred-background {
   text-align: center;
 }
 
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+  /* padding: 10px; */
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active div:nth-child(1) {
+  transform: translateY(6px) rotate(45deg) translateX(0px);
+  transition: transform 0.3s;
+  background-color: #fff;
+}
+
+.hamburger.active div:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+  transition: transform 0.3s;
+  background-color: #fff;
+}
+
 @media (max-width: 768px) {
+
+  .hamburger {
+    display: flex;
+  }
   section {
     scroll-margin-top: 100px;
   }
@@ -147,32 +183,6 @@ nav.blurred-background {
 
   .logo-container p {
     font-size: 2rem;
-  }
-
-  .mobile-nav-btn {
-    width: 30px;
-    height: 30px;
-    padding: 0.2rem;
-    border-radius: 50%;
-    position: relative;
-    transition: transform 0.3s ease;
-  }
-
-  /* when active, rotate 90 degrees */
-  .mobile-nav-btn.active {
-    transform: rotate(225deg);
-  }
-
-  .inner-circle {
-    width: 12px;
-    height: 12px;
-    background-color: #efefef;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-  }
-
-  .inner-circle.active {
-    background-color: rgb(80, 194, 249);
   }
 
   .mobile-nav-btn .inner-circle:nth-child(1) {
