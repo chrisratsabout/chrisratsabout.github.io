@@ -24,11 +24,14 @@
                 <div class="logo-container-left">
                     <p>Chris's Lessons</p>
                 </div>
-                <div class="mobile-nav-btn">
+               <div class="hamburger" id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <!-- <div class="inner-circle"></div>
                     <div class="inner-circle"></div>
                     <div class="inner-circle"></div>
-                    <div class="inner-circle"></div>
-                    <div class="inner-circle"></div>
+                    <div class="inner-circle"></div> -->
                 </div>
             </div>
             <div class="links-container">
@@ -374,25 +377,25 @@
         })
 
         const body = document.querySelector("body");
-        const mobileNavBtn = document.querySelector(".mobile-nav-btn");
+        const mobileNavBtn = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".blurred-background");
         const navLinks = document.querySelectorAll(".nav-link");
-        const innerCircles = document.querySelectorAll(".inner-circle");
+        // const innerCircles = document.querySelectorAll(".inner-circle");
         mobileNavBtn.addEventListener("click", () => {
             navMenu.classList.toggle("active");
             mobileNavBtn.classList.toggle("active");
             body.classList.toggle("no-scroll");
-            innerCircles.forEach(circle => {
-                circle.classList.toggle("active");
-            });
+            // innerCircles.forEach(circle => {
+            //     circle.classList.toggle("active");
+            // });
         });
 
         navLinks.forEach((link) => {
             link.addEventListener("click", () => {
                 navMenu.classList.remove("active");
-                innerCircles.forEach(circle => {
-                    circle.classList.toggle("active");
-                });
+                // innerCircles.forEach(circle => {
+                //     circle.classList.toggle("active");
+                // });
                 mobileNavBtn.classList.toggle("active");
             });
 
