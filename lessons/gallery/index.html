@@ -405,37 +405,6 @@
         const year = document.querySelector(".year");
         const currentYear = new Date().getFullYear();
         year.innerHTML = currentYear;
-
-        document.addEventListener("DOMContentLoaded", () => {
-            // 1. Define the start date
-            const startDate = new Date(2004, 8); // September 2004 (months are 0-indexed)
-
-            // 2. Calculate full years between startDate and today
-            const today = new Date();
-            let years = today.getFullYear() - startDate.getFullYear();
-
-            const hasNotHadAnniversary =
-                today.getMonth() < startDate.getMonth() ||
-                (today.getMonth() === startDate.getMonth() && today.getDate() < startDate.getDate());
-
-            if (hasNotHadAnniversary) years--;
-
-            // 3. Animate the count-up
-            const span = document.getElementById("years");
-            let current = 0;
-            const duration = 1500; // total animation time in ms
-            const frameRate = 30;  // frames per second
-            const increment = years / (duration / (1000 / frameRate));
-
-            const counter = setInterval(() => {
-                current += increment;
-                if (current >= years) {
-                    current = years;
-                    clearInterval(counter);
-                }
-                span.textContent = Math.floor(current);
-            }, 500 / frameRate);
-        });
     </script>
 </body>
 
